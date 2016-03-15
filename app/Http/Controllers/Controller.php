@@ -48,7 +48,7 @@ class Controller extends BaseController
                     'url' => $this->BASE_URL.'index.php/login'),
                 'team' => array(
                     'text' => $this->getText('a-team'),
-                    'url' => 'DEFAULT'),
+                    'url' => $this->BASE_URL.'index.php/team'),
                 'projects' => array(
                     'text' => $this->getText('a-projects'),
                     'url' => 'DEFAULT')));
