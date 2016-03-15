@@ -51,7 +51,7 @@ class Controller extends BaseController
                     'url' => $this->BASE_URL.'index.php/team'),
                 'projects' => array(
                     'text' => $this->getText('a-projects'),
-                    'url' => 'DEFAULT')));
+                    'url' => $this->BASE_URL.'index.php/projects')));
     }
     
     protected function getText($id)

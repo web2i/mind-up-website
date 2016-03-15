@@ -11,7 +11,8 @@ Route::group(['middleware' => 'web'], function () {
     
     Route::get('/team', 'TeamController@main');
     
-    //Route::get('/projects/', 'ProjectsController@main');
+    
+    Route::get('/projects', 'ProjectsController@main');
     
     //Route::get('/project/{id}', 'ProjectController@main');
     
