@@ -26,8 +26,9 @@ SET time_zone = "+00:00";
 -- Table structure for table `texts`
 --
 
+DROP TABLE IF EXISTS `texts`;
 CREATE TABLE IF NOT EXISTS `texts` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `textId` varchar(255) NOT NULL,
   `french` text NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
@@ -37,8 +38,18 @@ CREATE TABLE IF NOT EXISTS `texts` (
 --
 
 INSERT INTO `texts` (`id`, `textId`, `french`) VALUES
+(000000, 'DEFAULT', 'DEFAULT'),
 (1, 'website', 'Mind Up'),
-(2, 'copyright', 'Copyright 2015 mind-up');
+(2, 'copyright', 'Copyright 2015 mind-up'),
+(3, 'alt-logo', '[image for the logo]'),
+(4, 'alt-twitter', 'DEFAULT'),
+(5, 'alt-facebook', 'DEFAULT'),
+(6, 'alt-google', 'DEFAULT'),
+(7, 'a-home', 'Home'),
+(8, 'a-login', 'Login'),
+(9, 'a-team', 'Team'),
+(10, 'a-projects', 'Projects')
+;
 
 --
 -- Indexes for dumped tables
