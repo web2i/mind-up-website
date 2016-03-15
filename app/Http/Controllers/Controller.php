@@ -21,39 +21,48 @@ class Controller extends BaseController
             'js' => $this->BASE_URL.'/js/functions.js',
             'jquery' => $this->BASE_URL.'/js/jquery-1.11.3.js',
             'css' => $this->BASE_URL.'/css/stylesheet.css',
-            'website' => \DB::table('texts')->where('textId', 'website')->value($this->language),
-            'copyright' => \DB::table('texts')->where('textId', 'copyright')->value($this->language),
+            'website' => $this->getText('website'),
+            'copyright' => $this->getText('copyright'),
             'p' => array(
                 0 => 'DEFAULT',
                 1 => 'DEFAULT'),
             'img' => array(
                 'logo' => array(
                     'src' => $this->BASE_URL.'/ressources/logo.png',
-                    'alt' => 'DEFAULT'),
+                    'alt' => $this->getText('alt-logo')),
                 'twitter' => array(
                     'src' => $this->BASE_URL.'/ressources/twitter.png',
-                    'alt' => 'DEFAULT'),
+                    'alt' => $this->getText('alt-twitter')),
                 'facebook' => array(
                     'src' => $this->BASE_URL.'/ressources/facebook.png',
-                    'alt' => 'DEFAULT'),
+                    'alt' => $this->getText('alt-facebook')),
                 'google' => array(
                     'src' => $this->BASE_URL.'/ressources/google.png',
-                    'alt' => 'DEFAULT'),
-                1 => array(
-                    'src' => 'DEFAULT',
-                    'alt' => 'DEFAULT')),
+                    'alt' => $this->getText('alt-google'))),
             'a' => array(
                 'home' => array(
-                    'text' => 'Home',
+                    'text' => $this->getText('a-home'),
                     'url' => $this->BASE_URL.'index.php/'),
                 'login' => array(
-                    'text' => 'Login',
+                    'text' => $this->getText('a-login'),
                     'url' => $this->BASE_URL.'index.php/login'),
                 'team' => array(
-                    'text' => 'DEFAULT',
+                    'text' => $this->getText('a-team'),
                     'url' => 'DEFAULT'),
                 'projects' => array(
-                    'text' => 'DEFAULT',
+                    'text' => $this->getText('a-projects'),
                     'url' => 'DEFAULT')));
     }
+    
+    protected function getText($id)
+    {
+        $text = \DB::table('texts')->where('textId', $id)->value($this->language);
+        if(!$text || $text === '')
+        {
+            echo ("ERROR : no text in database for : " . $id . "</br>");
+            
+        }
+        return $text;
+    }
 }
+
