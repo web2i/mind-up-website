@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿
+<!--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>	
@@ -25,7 +27,14 @@
 	</div>
 </header>
 
-<body>
+<body> 
+-->
+
+
+﻿@extends('layouts.master')
+
+@section('content')
+
 
 <div id="signUp_picture"></div>
 
@@ -62,6 +71,7 @@
 	</form>
 </section>
 
+<!--
 <footer id="footer">
 	<div id="footer_container">
 		<h5>Copyright© 2015-2016 Web2i. All Rights Reserved.</h5>
@@ -73,3 +83,5 @@ $("#tabs").tabs();
 </script>
 </body>
 </html>
+-->
+
