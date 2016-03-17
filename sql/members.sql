@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `members` (
 
 
 INSERT INTO `members` (`id`, `name`, `firstname`, `jobId`, `email`, `hash`, `mobile`, `addressId`, `cityOfBirth`, `pathToStudentCard`, `pathToIdCard`, `pathToCV`, `pathToLicense`, `pathToGrayCard`) VALUES
-(0000000, 'Johnson', 'Johnny', 0, 'john@john.com', '77', '0612345678', 0, 'Paris', '','','','','');
+(0000000, 'Johnson', 'Johnny', 0, 'john@john.com', 'pass', '0612345678', 0, 'Paris', '','','','','');
 
 --
 -- Indexes for dumped tables

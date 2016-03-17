@@ -22,7 +22,7 @@
 				<li><a href="index.php">Accueil</a></li>
 				<li><a href="projets.php">Projets</a></li>
 				<li><a href="membres.php">Notre Equipe</a></li>
-			</ul>		
+			</ul>
 		</nav>
 	</div>
 </header>
@@ -40,14 +40,14 @@
 
 <section id="signUp_field">
 		
-	<form action="private_index.php" method="POST">
+	<form action="" method="POST">
 		<label class="info3">Inscription d'un nouveau collaborateur </label> <br/> <br/>
 		<!-- Ensemble de champs -->
 		<label class="info2">Adresse mail: </label><input class="signUp_input" name="mail" value="" /> <br/>
-		<label class="info2">Nom: </label><input class="signUp_input" name="mail" value="" /> <br/>
-		<label class="info2">Prenom: </label><input class="signUp_input" name="mail" value="" /> <br/>
-		<label class="info2">Mot de passe: </label><input class="connection_input" type="password" name="mdp" value="" /> <br/>
-		<label class="info2">Confirmation Mot de passe: </label><input class="connection_input" type="password" name="mdp" value="" /> <br/>
+		<label class="info2">Nom: </label><input class="signUp_input" name="name" value="" /> <br/>
+		<label class="info2">Prenom: </label><input class="signUp_input" name="firstname" value="" /> <br/>
+		<label class="info2">Mot de passe: </label><input class="connection_input" type="password" name="password" value="" /> <br/>
+		<label class="info2">Confirmation Mot de passe: </label><input class="connection_input" type="password" name="password2" value="" /> <br/>
 		<label class="info2">Poste exercé: </label> 
 		<select id="selectmenu">
 			<option selected="selected">Membre</option>
@@ -68,6 +68,9 @@
 		</div>
 		<label class="info2">Clés du bureau: </label> <input name="cles" type="checkbox"> <br/>
 		<label class="info2"></label><input class="signUp_btn" type="submit" name="valider" value="Valider" /> <br/><br/><br/>
+		
+		<input type="hidden" name="_token" value="{{ csrf_token() }}">
+		
 	</form>
 </section>
 
