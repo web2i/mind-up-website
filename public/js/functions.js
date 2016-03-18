@@ -1,5 +1,8 @@
 //jquery
 
+// Il faudrait une fonction apelée par le php pour pas avoir à remettre le path à la main.
+var BASE_URL = 'http://localhost/~user/mind-up-website/public/';
+
 /*** Definition des dimensions des images du slider & animation des textes ***/
 
 $(window).load(function() {
@@ -59,7 +62,7 @@ $(function(){
 /*** Création du bouton top ***/
 
 $(document).ready(function(){
-   $('body').append('<a href="#top" class="top_link" title="Revenir en haut de page"><img style="width:30px;height:30px;" src="ressources/top_arrow.png"/></a>');
+   $('body').append('<a href="#top" class="top_link" title="Revenir en haut de page"><img style="width:30px;height:30px;" src="' + BASE_URL +'ressources/top_arrow.png"/></a>');
    $('.top_link').css({
 	'position'				:	'fixed',
 	'right'					:	'20px',
