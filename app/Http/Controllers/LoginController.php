@@ -28,12 +28,11 @@ class LoginController extends Controller
     public function checkAuth($mail, $password)
     {
         $hash = \DB::table('members')->where('email', $mail)->value('hash');
-        //echo $mail;
-        //echo $password;
-        //echo $hash;
         if (password_verify ($password , $hash ))
         {
             echo "connected!";
+            header('Location: '.  $this->BASE_URL . 'index.php/private-home');
+            exit();
         }
     }
 }

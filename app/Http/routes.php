@@ -17,6 +17,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/inscription', 'InscriptionController@main');
     Route::post('/inscription', 'InscriptionController@main');
     
+    Route::get('/private-home', 'PrivateHomeController@main');
+    
     //Route::get('auth/login', 'Auth\AuthController@getLogin');
     
     //Route::get('auth/login', 'Auth\AuthController@getLogin');
