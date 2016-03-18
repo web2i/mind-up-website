@@ -48,10 +48,10 @@ class Controller extends BaseController
                     'url' => $this->BASE_URL.'index.php/login'),
                 'team' => array(
                     'text' => $this->getText('a-team'),
-                    'url' => $this->BASE_URL.'index.php/team'),
+                    'url' => $this->getUrl('index.php/team')),
                 'projects' => array(
                     'text' => $this->getText('a-projects'),
-                    'url' => $this->BASE_URL.'index.php/projects')));
+                    'url' => $this->getUrl('index.php/projects'))));
     }
     
     protected function getText($id)
@@ -63,6 +63,11 @@ class Controller extends BaseController
             
         }
         return $text;
+    }
+    
+    protected function getUrl($path)
+    {
+        return $this->BASE_URL.$path;
     }
 }
 
