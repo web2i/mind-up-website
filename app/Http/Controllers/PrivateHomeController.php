@@ -17,14 +17,15 @@ class PrivateHomeController extends Controller
 
     public function main()
     {
+        $this->init();
+        
+        if(!$this->user->getRight('browseBackOffice'))
+        {
+            return redirect('/home');
+        }
+        
         $this->initData();
         
-        //echo '<pre>'; print_r(Session::get('user')); echo '</pre>';
-        //echo '<pre>'; print_r($user); echo '</pre>';
-        /*if($user->rights['1'] === true)
-        {
-            
-        }*/
         return view('private-home', $this->data);
     }
     

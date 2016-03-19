@@ -44,6 +44,7 @@ class HomeController extends Controller
 
     public function main()
     {
+        $this->init();
         $this->initData();
         return view('home', $this->data);
     }

@@ -15,11 +15,28 @@ class User
     protected $id;
     protected $job;
     
-    function __construct($email, $hash) {
-        $this->email = $email;
-        $this->id = DB::table('members')->where('email', $email)->value('id');
-        $this->name = DB::table('members')->where('email', $email)->value('name');
-        $this->jobId = DB::table('members')->where('email', $email)->value('jobId');
-        $this->job = new Job($this->jobId);
+    protected function __construct() {
+        
+    }
+    
+    public static function create() {
+        $instance = new self();
+        $instance->job = new Job('guest');
+        return $instance;
+    }
+    
+    public static function createFromEmailHash($email, $hash) {
+        $instance = new self();
+        $instance->email = $email;
+        $instance->id = DB::table('members')->where('email', $email)->value('id');
+        $instance->name = DB::table('members')->where('email', $email)->value('name');
+        $instance->jobId = DB::table('members')->where('email', $email)->value('jobId');
+        $instance->job = new Job($instance->jobId);
+        return $instance;
     } 
+    
+    public function getRight($id)
+    {
+        return $this->job->getRight($id);
+    }
 }

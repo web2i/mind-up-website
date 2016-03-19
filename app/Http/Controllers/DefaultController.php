@@ -14,6 +14,7 @@ class DefaultController extends Controller
 
     public function main()
     {
+        $this->init();
         $this->initData();
         return view('default', $this->data);
     }

@@ -8,9 +8,12 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/test', 'TestController@main');
     
     Route::get('/', 'HomeController@main');
+    Route::get('/home', 'HomeController@main');
     
     Route::get('/login', 'LoginController@main');
     Route::post('/login', 'LoginController@main');
+    
+    Route::get('/logout', 'LogoutController@main');
     
     Route::get('/team', 'TeamController@main');
     

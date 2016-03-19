@@ -44,7 +44,8 @@ CREATE TABLE IF NOT EXISTS `jobs` (
 
 
 INSERT INTO `jobs` (`textId`, `browseBackOffice`, `editSelfInfos`, `readOtherInfos`, `manageProject`, `editFigures`, `editOtherInfos`, `editPublicTexts`, `managePositions`, `manageMembers`) VALUES
-    ('admin', 1, 1, 1, 1, 1, 1, 1, 1, 1);
+    ('admin', 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    ('guest', 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 --
 -- Indexes for dumped tables

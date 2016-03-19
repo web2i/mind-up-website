@@ -15,4 +15,9 @@ class Job
         $this->rights = json_decode(json_encode($rights), True);
         unset($this->rights['textId']);
     } 
+    
+    public function getRight($id)
+    {
+        return $this->rights[$id];
+    }
 }

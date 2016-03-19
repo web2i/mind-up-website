@@ -15,6 +15,7 @@ class InscriptionController extends Controller
 
     public function main()
     {   
+        $this->init();
         $go = true;
         $connected = true;
         $this->initData();

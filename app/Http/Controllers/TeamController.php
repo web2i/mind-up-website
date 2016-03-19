@@ -19,6 +19,7 @@ class TeamController extends Controller
 
     public function main()
     {
+        $this->init();
         $this->initData();
         return view('team', $this->data);
     }

@@ -17,6 +17,7 @@ class LoginController extends Controller
 
     public function main()
     {
+        $this->init();
         $this->initData();
         if(isset($_POST['email'])
             && isset($_POST['password'])
@@ -32,7 +33,7 @@ class LoginController extends Controller
         $hash = DB::table('members')->where('email', $email)->value('hash');
         if (password_verify ($password , $hash ))
         {
-            Session::put('user', new User($email , $hash));
+            Session::put('user', User::createFromEmailHash($email , $hash));
             return redirect('private-home');
         }
     }

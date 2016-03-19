@@ -6,6 +6,8 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use App\MyClasses\User;
+use Session;
 
 class Controller extends BaseController
 {
@@ -14,6 +16,14 @@ class Controller extends BaseController
     protected $data;    
     protected $BASE_URL = 'http://localhost/~user/mind-up-website/public/';
     protected $language = 'french';
+    protected $user;
+    
+    protected function init()
+    {
+        $this->user = User::create();
+        if(Session::get('user'))
+            $this->user = Session::get('user');
+    }
     
     protected function initData()
     {

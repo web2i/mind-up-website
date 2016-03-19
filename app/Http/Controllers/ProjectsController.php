@@ -19,6 +19,7 @@ class ProjectsController extends Controller
 
     public function main()
     {
+        $this->init();
         $this->initData();
         return view('projects', $this->data);
     }
