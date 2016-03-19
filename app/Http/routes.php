@@ -4,6 +4,8 @@ use App\Task;
 use Illuminate\Http\Request;
 
 Route::group(['middleware' => 'web'], function () {
+
+    Route::get('/test', 'TestController@main');
     
     Route::get('/', 'HomeController@main');
     
@@ -24,5 +26,7 @@ Route::group(['middleware' => 'web'], function () {
     //Route::get('auth/login', 'Auth\AuthController@getLogin');
     
     //Route::get('/project/{id}', 'ProjectController@main');
+    
+    
     
 });

@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `members`;
 CREATE TABLE IF NOT EXISTS `members` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `firstname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `jobId` int(11) NOT NULL,
+  `jobId` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   
@@ -48,7 +48,8 @@ CREATE TABLE IF NOT EXISTS `members` (
 
 
 INSERT INTO `members` (`id`, `name`, `firstname`, `jobId`, `email`, `hash`, `mobile`, `addressId`, `cityOfBirth`, `pathToStudentCard`, `pathToIdCard`, `pathToCV`, `pathToLicense`, `pathToGrayCard`) VALUES
-(0000000, 'Johnson', 'Johnny', 0, 'john@john.com', 'pass', '0612345678', 0, 'Paris', '','','','','');
+(0, 'Admin', 'Admin', 'admin', 'admin', '$2y$10$RXa9PP9duKR/HQj8AXao6.Tp3bgcU7r/ehunqMVpBXkI/uPg7H.qi', '0123456789', 0, 'City', '','','','','') -- pass = admin
+;
 
 --
 -- Indexes for dumped tables

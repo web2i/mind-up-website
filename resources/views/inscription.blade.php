@@ -43,7 +43,7 @@
 	<form action="" method="POST">
 		<label class="info3">Inscription d'un nouveau collaborateur </label> <br/> <br/>
 		<!-- Ensemble de champs -->
-		<label class="info2">Adresse mail: </label><input class="signUp_input" name="mail" value="" /> <br/>
+		<label class="info2">Adresse mail: </label><input class="signUp_input" name="email" value="" /> <br/>
 		<label class="info2">Nom: </label><input class="signUp_input" name="name" value="" /> <br/>
 		<label class="info2">Prenom: </label><input class="signUp_input" name="firstname" value="" /> <br/>
 		<label class="info2">Mot de passe: </label><input class="connection_input" type="password" name="password" value="" /> <br/>

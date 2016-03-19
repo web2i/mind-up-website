@@ -60,7 +60,6 @@ class Controller extends BaseController
         if(!$text || $text === '')
         {
             echo ("ERROR : no text in database for : " . $id . "</br>");
-            
         }
         return $text;
     }

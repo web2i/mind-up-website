@@ -30,7 +30,7 @@ DROP TABLE IF EXISTS `texts`;
 CREATE TABLE IF NOT EXISTS `texts` (
   `textId` varchar(255) NOT NULL,
   `french` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `texts`

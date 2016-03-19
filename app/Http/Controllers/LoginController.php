@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\MyClasses\User;
+use Session;
+use DB;
 
 class LoginController extends Controller
 {
@@ -15,24 +18,22 @@ class LoginController extends Controller
     public function main()
     {
         $this->initData();
-        //var_dump($_POST);
-        if(isset($_POST['mail'])
+        if(isset($_POST['email'])
             && isset($_POST['password'])
             )
         {
-            $this->checkAuth($_POST['mail'], $_POST['password']);
+            return $this->checkAuth($_POST['email'], $_POST['password']);
         }
         return view('login', $this->data);
     }
     
-    public function checkAuth($mail, $password)
+    public function checkAuth($email, $password)
     {
-        $hash = \DB::table('members')->where('email', $mail)->value('hash');
+        $hash = DB::table('members')->where('email', $email)->value('hash');
         if (password_verify ($password , $hash ))
         {
-            echo "connected!";
-            header('Location: '.  $this->BASE_URL . 'index.php/private-home');
-            exit();
+            Session::put('user', new User($email , $hash));
+            return redirect('private-home');
         }
     }
 }
