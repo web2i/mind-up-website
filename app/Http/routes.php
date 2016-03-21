@@ -25,8 +25,12 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/private-home', 'PrivateHomeController@main');
     
     Route::get('/data', 'DataController@main');
+    Route::get('/edit-texts', 'DataController@main');
     
      Route::get('/admin', 'AdminController@main');
+      Route::get('/manage-members', 'AdminController@main');
+      
+    Route::get('/profil', 'ProfilController@main');
     
     //Route::get('auth/login', 'Auth\AuthController@getLogin');
     

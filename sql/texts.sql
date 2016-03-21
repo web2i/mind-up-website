@@ -47,6 +47,15 @@ INSERT INTO `texts` (`textId`, `french`) VALUES
 ('a-home', 'Home'),
 ('a-login', 'Login'),
 ('a-team', 'Team'),
+
+('a-inscription', 'inscription'),
+('a-manage-members', 'manage-members'),
+('a-profil', 'profil'),
+('a-edit-profil', 'edit-profil'),
+('a-edit-figures', 'edit-figures'),
+('a-edit-projects', 'edit-projects'),
+('a-edit-texts', 'edit-texts'),
+
 ('a-projects', 'Projects'),
 ('home-h-1-1', 'home-h-1-1'),
 ('home-h-2-1', 'home-h-2-1'),

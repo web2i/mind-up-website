@@ -51,6 +51,37 @@ class Controller extends BaseController
                     'src' => $this->BASE_URL.'/ressources/google.png',
                     'alt' => $this->getText('alt-google'))),
             'a' => array(
+            
+                'inscription' => array(
+                    'text' => $this->getText('a-inscription'),
+                    'url' => $this->BASE_URL.'index.php/inscription'),
+                'manage-members' => array(
+                    'text' => $this->getText('a-manage-members'),
+                    'url' => $this->BASE_URL.'index.php/manage-members'),
+            
+            
+            
+                'profil' => array(
+                    'text' => $this->getText('a-profil'),
+                    'url' => $this->BASE_URL.'index.php/profil'),
+                'edit-profil' => array(
+                    'text' => $this->getText('a-edit-profil'),
+                    'url' => $this->BASE_URL.'index.php/edit-profil'),
+                'edit-texts' => array(
+                    'text' => $this->getText('a-edit-texts'),
+                    'url' => $this->BASE_URL.'index.php/edit-texts'),
+                'edit-figures' => array(
+                    'text' => $this->getText('a-edit-figures'),
+                    'url' => $this->BASE_URL.'index.php/edit-figures'),
+                'edit-projects' => array(
+                    'text' => $this->getText('a-edit-projects'),
+                    'url' => $this->BASE_URL.'index.php/edit-projects'),
+                'home' => array(
+                    'text' => $this->getText('a-home'),
+                    'url' => $this->BASE_URL.'index.php/'),
+            
+            
+            
                 'home' => array(
                     'text' => $this->getText('a-home'),
                     'url' => $this->BASE_URL.'index.php/'),
