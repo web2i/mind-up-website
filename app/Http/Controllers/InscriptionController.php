@@ -16,6 +16,11 @@ class InscriptionController extends Controller
     public function main()
     {   
         $this->init();
+        if(!$this->user->getRight('manageMembers'))
+        {
+            return redirect('/home');
+        }
+        
         $go = true;
         $connected = true;
         $this->initData();

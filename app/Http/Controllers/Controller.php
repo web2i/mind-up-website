@@ -76,9 +76,9 @@ class Controller extends BaseController
                 'edit-projects' => array(
                     'text' => $this->getText('a-edit-projects'),
                     'url' => $this->BASE_URL.'index.php/edit-projects'),
-                'home' => array(
-                    'text' => $this->getText('a-home'),
-                    'url' => $this->BASE_URL.'index.php/'),
+                'logout' => array(
+                    'text' => $this->getText('a-logout'),
+                    'url' => $this->BASE_URL.'index.php/logout'),
             
             
             

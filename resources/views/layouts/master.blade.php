@@ -19,6 +19,7 @@
 				    <li><a href="{{ $a['team']['url']}}">{{ $a['team']['text'] }}</a></li>
 				    
 				    <li><a href="{{ $a['login']['url']}}">{{ $a['login']['text'] }}</a></li>
+				    <li><a href="{{ $a['logout']['url']}}">{{ $a['logout']['text'] }}</a></li>
 				    <li><a href="{{ $a['inscription']['url']}}">{{ $a['inscription']['text'] }}</a></li>
 				    <li><a href="{{ $a['manage-members']['url']}}">{{ $a['manage-members']['text'] }}</a></li>
 				    <li><a href="{{ $a['profil']['url']}}">{{ $a['profil']['text'] }}</a></li>

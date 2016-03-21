@@ -55,6 +55,7 @@ INSERT INTO `texts` (`textId`, `french`) VALUES
 ('a-edit-figures', 'edit-figures'),
 ('a-edit-projects', 'edit-projects'),
 ('a-edit-texts', 'edit-texts'),
+('a-logout', 'logout'),
 
 ('a-projects', 'Projects'),
 ('home-h-1-1', 'home-h-1-1'),
