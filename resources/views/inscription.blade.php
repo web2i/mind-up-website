@@ -74,6 +74,7 @@
 	</form>
 </section>
 
+@stop
 <!--
 <footer id="footer">
 	<div id="footer_container">

@@ -22,18 +22,21 @@ class InscriptionController extends Controller
         if($go &&
             !(isset($_POST['email'])
                 && isset($_POST['password'])
-                && isset($_POST['password2'])))
+                && isset($_POST['password2'])
+                && isset($_POST['name'])
+                && isset($_POST['firstname'])))
         {
             $go = false;
-            //echo 'Error : il faut remplir tous les champs';
         }
         if($go
             && !(strlen($_POST['email'])
             && strlen($_POST['password'])
-            && strlen($_POST['password2']) ))
+            && strlen($_POST['password2']) 
+            && strlen($_POST['name']) 
+            && strlen($_POST['firstname']) ))
         {
             $go = false;
-            echo 'Error : il faut remplir tous les champs';
+            echo 'Error : il faut remplir tous les champs !';
         }
         if($go && $_POST['password']!==$_POST['password2'])
         {
@@ -42,8 +45,7 @@ class InscriptionController extends Controller
         }
         if($go)
         {
-            //var_dump($_POST);
-            $this->addMember($_POST['email'], $_POST['password']);
+            $this->addMember($_POST['email'], $_POST['password'], $_POST['name'], $_POST['firstname'], 'member');
         }
         if($connected)
             return view('inscription', $this->data);
@@ -51,13 +53,13 @@ class InscriptionController extends Controller
             return "not connected";
     }
     
-    private function addMember($email, $password)
+    private function addMember($email, $password, $name, $firstname, $jobId)
     {
         $hash = password_hash($password,  PASSWORD_DEFAULT);
         echo(DB::table('members')->insert(
-            ['email' => $email, 'hash' => $hash]
+            ['email' => $email, 'hash' => $hash, 'name' => $name, 'firstname' => $firstname, 'jobId' => $jobId]
         ));
-        //echo "Inscription ok :)";
+        echo "Inscription ok :)";
     }
     
     

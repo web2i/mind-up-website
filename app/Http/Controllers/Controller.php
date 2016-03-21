@@ -21,9 +21,9 @@ class Controller extends BaseController
     protected function init()
     {
         $this->user = User::create();
-	$this->BASE_URL = env('BASE_URL','http://localhost/~user/mind-up-website/public/');
+	    $this->BASE_URL = env('BASE_URL','http://localhost/~user/mind-up-website/public/');
         if(Session::get('user'))
-            $this->user = Session::get('user');
+        $this->user = Session::get('user');
     }
     
     protected function initData()
