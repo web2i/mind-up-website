@@ -60,8 +60,22 @@ INSERT INTO `texts` (`textId`, `french`) VALUES
 ('home-p-5', 'home-p-5'),
 ('home-p-6', 'home-p-6'),
 ('home-p-7', 'home-p-7'),
-('home-p-8', 'home-p-8')
+('home-p-8', 'home-p-8'),
+('rights-browseBackOffice', 'browseBackOffice'),
+('rights-editSelfInfos', 'editSelfInfos'),
+('rights-readOtherInfos', 'readOtherInfos'),
+('rights-manageProject', 'manageProject'),
+('rights-editFigures', 'editFigures'),
+('rights-editOtherInfos', 'editOtherInfos'),
+('rights-editPublicTexts', 'editPublicTexts'),
+('rights-managePositions', 'managePositions'),
+('rights-manageMembers', 'manageMembers'),
+('admin', 'admin'),
+('guest', 'guest'),
+('member', 'member')
 ;
+
+
 
 --
 -- Indexes for dumped tables

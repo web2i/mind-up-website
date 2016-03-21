@@ -26,6 +26,8 @@ Route::group(['middleware' => 'web'], function () {
     
     Route::get('/data', 'DataController@main');
     
+     Route::get('/admin', 'AdminController@main');
+    
     //Route::get('auth/login', 'Auth\AuthController@getLogin');
     
     //Route::get('auth/login', 'Auth\AuthController@getLogin');
