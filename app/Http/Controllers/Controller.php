@@ -14,13 +14,14 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     
     protected $data;    
-    protected $BASE_URL = 'http://localhost/~user/mind-up-website/public/';
+    protected $BASE_URL;
     protected $language = 'french';
     protected $user;
     
     protected function init()
     {
         $this->user = User::create();
+	$this->BASE_URL = env('BASE_URL','http://localhost/~user/mind-up-website/public/');
         if(Session::get('user'))
             $this->user = Session::get('user');
     }
