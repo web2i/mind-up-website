@@ -23,8 +23,15 @@ class ProjectController extends Controller
             $this->data['project']['description'] = $project->description;
             $this->data['project']['thumbnail'] = $project->thumbnail;
             $this->data['project']['date'] = $project->date;
+            $pictures = \DB::table('project_picture')->where('projectId', $id)->get();
+            if(isset($pictures))
+            {
+                for ($i=0 ; $i < count($pictures) ; $i++) {
+                    $this->data['project']['picture'][$i] = $pictures[$i]->picturePath;
+                }
+            }
+            return view('project', $this->data);
         }
-        return view('project', $this->data);
     }
-}
 
+}
