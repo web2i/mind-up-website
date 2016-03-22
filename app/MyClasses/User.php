@@ -70,4 +70,7 @@ class User
     public function getJobTextId() {
         return $this->job->getTextId();
     }
+    public function getJobId() {
+        return $this->jobId;
+    }
 }
