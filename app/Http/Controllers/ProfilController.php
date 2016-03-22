@@ -12,7 +12,7 @@ class ProfilController extends Controller
         $this->data['title'] = $this->getText('profil');
     }
 
-    public function main()
+    public function main($id)
     {
         $this->init();
         $this->initData();

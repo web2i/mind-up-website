@@ -63,7 +63,7 @@ class Controller extends BaseController
             
                 'profil' => array(
                     'text' => $this->getText('a-profil'),
-                    'url' => $this->BASE_URL.'index.php/profil'),
+                    'url' => $this->BASE_URL.'index.php/profil/0'),
                 'edit-profil' => array(
                     'text' => $this->getText('a-edit-profil'),
                     'url' => $this->BASE_URL.'index.php/edit-profil'),

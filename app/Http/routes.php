@@ -32,7 +32,7 @@ Route::group(['middleware' => 'web'], function () {
      Route::get('/admin', 'AdminController@main');
       Route::get('/manage-members', 'AdminController@main');
       
-    Route::get('/profil', 'ProfilController@main');
+    Route::get('/profil/{id}', 'ProfilController@main');
     
     //Route::get('auth/login', 'Auth\AuthController@getLogin');
     
