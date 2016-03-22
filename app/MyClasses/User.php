@@ -14,6 +14,7 @@ class User
     protected $jobId;
     protected $id;
     protected $job;
+    protected $mobile;
     
     protected function __construct() {
         
@@ -30,7 +31,21 @@ class User
         $instance->email = $email;
         $instance->id = DB::table('members')->where('email', $email)->value('id');
         $instance->name = DB::table('members')->where('email', $email)->value('name');
+        $instance->firstname = DB::table('members')->where('email', $email)->value('firstname');
         $instance->jobId = DB::table('members')->where('email', $email)->value('jobId');
+        $instance->mobile = DB::table('members')->where('email', $email)->value('mobile');
+        $instance->job = new Job($instance->jobId);
+        return $instance;
+    }
+    
+    public static function createFromId($id) {
+        $instance = new self();
+        $instance->id = $id;
+        $instance->email = DB::table('members')->where('id', $id)->value('email');
+        $instance->name = DB::table('members')->where('id', $id)->value('name');
+        $instance->firstname = DB::table('members')->where('id', $id)->value('firstname');
+        $instance->jobId = DB::table('members')->where('id', $id)->value('jobId');
+        $instance->mobile = DB::table('members')->where('id', $id)->value('mobile');
         $instance->job = new Job($instance->jobId);
         return $instance;
     } 
@@ -38,5 +53,21 @@ class User
     public function getRight($id)
     {
         return $this->job->getRight($id);
+    }
+    
+    public function getName() {
+        return $this->name;
+    }
+    public function getFirstname() {
+        return $this->firstname;
+    }
+    public function getEmail() {
+        return $this->email;
+    }
+    public function getMobile() {
+        return $this->mobile;
+    }
+    public function getJobTextId() {
+        return $this->job->getTextId();
     }
 }

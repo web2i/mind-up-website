@@ -20,4 +20,9 @@ class Job
     {
         return $this->rights[$id];
     }
+    
+    public function getTextId()
+    {
+        return $this->textId;
+    }
 }

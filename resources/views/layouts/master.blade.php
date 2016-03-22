@@ -19,12 +19,13 @@
 				    <li><a href="{{ $a['team']['url']}}">{{ $a['team']['text'] }}</a></li>
 				    
 				    <li><a href="{{ $a['project']['url']}}">{{ $a['project']['text'] }}</a></li>
+				    <li><a href="{{ $a['profil']['url']}}">{{ $a['profil']['text'] }}</a></li>
+				    
 				    
 				    <li><a href="{{ $a['login']['url']}}">{{ $a['login']['text'] }}</a></li>
 				    <li><a href="{{ $a['logout']['url']}}">{{ $a['logout']['text'] }}</a></li>
 				    <li><a href="{{ $a['inscription']['url']}}">{{ $a['inscription']['text'] }}</a></li>
 				    <li><a href="{{ $a['manage-members']['url']}}">{{ $a['manage-members']['text'] }}</a></li>
-				    <li><a href="{{ $a['profil']['url']}}">{{ $a['profil']['text'] }}</a></li>
 				    <li><a href="{{ $a['edit-profil']['url']}}">{{ $a['edit-profil']['text'] }}</a></li>
 				    <li><a href="{{ $a['edit-texts']['url']}}">{{ $a['edit-texts']['text'] }}</a></li>
 				    <li><a href="{{ $a['edit-figures']['url']}}">{{ $a['edit-figures']['text'] }}</a></li>
