@@ -15,7 +15,7 @@ class ProjectsController extends Controller
                     'src' => $this->BASE_URL.'/ressources/profil.jpeg',
                     'alt' => 'DEFAULT');
         $this->data['title'] = 'Home';
-        $projects = \DB::table('project')->get()->orderBy('projet.date','DESC');
+        $projects = \DB::table('project')->orderBy('project.date','DESC')->get();
         for ($i=0 ; $i < count($projects) ;$i++) {
             $this->data['projects'][$i]['title'] = $projects[$i]->title;
             $this->data['projects'][$i]['description'] = $projects[$i]->description;
