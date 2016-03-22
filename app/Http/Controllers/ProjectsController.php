@@ -12,14 +12,20 @@ class ProjectsController extends Controller
     {
         parent::initData();
         $this->data['img']['profil'] = array(
-                    'src' => $this->BASE_URL.'/ressources/profil.jpeg',
-                    'alt' => 'DEFAULT');
+            'src' => $this->BASE_URL.'/ressources/profil.jpeg',
+            'alt' => 'DEFAULT');
         $this->data['title'] = 'Home';
-        $projects = \DB::table('project')->get();
-        for ($i=0 ; $i < count($projects) ;$i++) {
-            $this->data['projects'][$i]['title'] = $projects[$i]->title;
-            $this->data['projects'][$i]['description'] = $projects[$i]->description;
-            $this->data['projects'][$i]['thumbnail'] = $projects[$i]->thumbnail;
+        $projects = \DB::table('project')->orderBy('project.date','DESC')->get();
+        if(isset($projects))
+        {
+            for ($i=0 ; $i < count($projects) ;$i++) {
+                if($projects[$i]->visible == 1)
+                {
+                    $this->data['projects'][$i]['title'] = $this->getText("project-".($i+1)."-title");
+                    $this->data['projects'][$i]['description'] = $this->getText("project-".($i+1)."-description");
+                    $this->data['projects'][$i]['thumbnail'] = $projects[$i]->thumbnail;
+                }
+            }
         }
     }
 

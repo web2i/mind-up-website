@@ -6,7 +6,10 @@
 	<h2 class="content_title">L'ensemble de nos projets.</h2>
 
 	<!-- Affiche les infos de chaque projet -->
-    <?php print_r($projects);?>
+    <?php 
+    if(isset($projects))
+    	print_r($projects);
+    ?>
 
 	<!-- Partie provisoire pour générer une galerie "test" -->
 
