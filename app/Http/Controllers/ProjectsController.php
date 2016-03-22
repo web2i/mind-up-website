@@ -15,6 +15,12 @@ class ProjectsController extends Controller
                     'src' => $this->BASE_URL.'/ressources/profil.jpeg',
                     'alt' => 'DEFAULT');
         $this->data['title'] = 'Home';
+        $projects = \DB::table('project')->get();
+        for ($i=0 ; $i < count($projects) ;$i++) {
+            $this->data['projects'][$i]['title'] = $projects[$i]->title;
+            $this->data['projects'][$i]['description'] = $projects[$i]->description;
+            $this->data['projects'][$i]['thumbnail'] = $projects[$i]->thumbnail;
+        }
     }
 
     public function main()
