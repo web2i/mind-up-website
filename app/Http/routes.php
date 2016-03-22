@@ -19,6 +19,8 @@ Route::group(['middleware' => 'web'], function () {
     
     Route::get('/projects', 'ProjectsController@main');
     
+    Route::get('/project/{id}', 'ProjectController@main');
+    
     Route::get('/inscription', 'InscriptionController@main');
     Route::post('/inscription', 'InscriptionController@main');
     

@@ -18,6 +18,8 @@
 				    <li><a href="{{ $a['projects']['url']}}">{{ $a['projects']['text'] }}</a></li>
 				    <li><a href="{{ $a['team']['url']}}">{{ $a['team']['text'] }}</a></li>
 				    
+				    <li><a href="{{ $a['project']['url']}}">{{ $a['project']['text'] }}</a></li>
+				    
 				    <li><a href="{{ $a['login']['url']}}">{{ $a['login']['text'] }}</a></li>
 				    <li><a href="{{ $a['logout']['url']}}">{{ $a['logout']['text'] }}</a></li>
 				    <li><a href="{{ $a['inscription']['url']}}">{{ $a['inscription']['text'] }}</a></li>
