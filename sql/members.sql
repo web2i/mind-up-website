@@ -48,7 +48,8 @@ CREATE TABLE IF NOT EXISTS `members` (
 
 
 INSERT INTO `members` (`id`, `name`, `firstname`, `jobId`, `email`, `hash`, `mobile`, `addressId`, `cityOfBirth`, `pathToStudentCard`, `pathToIdCard`, `pathToCV`, `pathToLicense`, `pathToGrayCard`) VALUES
-(0, 'Admin', 'Admin', 'admin', 'admin', '$2y$10$RXa9PP9duKR/HQj8AXao6.Tp3bgcU7r/ehunqMVpBXkI/uPg7H.qi', '0123456789', 0, 'City', '','','','','') -- pass = admin
+(0, 'Admin', 'Admin', 'admin', 'admin', '$2y$10$RXa9PP9duKR/HQj8AXao6.Tp3bgcU7r/ehunqMVpBXkI/uPg7H.qi', '0123456789', 0, 'City', '','','','',''), -- pass = admin
+(1, 'John', 'Do', 'project-manager', 'themail@gmail.com', '', '0621307498', 0, 'City', '','','','','')
 ;
 
 --

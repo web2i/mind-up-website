@@ -81,8 +81,9 @@ INSERT INTO `texts` (`textId`, `french`) VALUES
 ('rights-editPublicTexts', 'editPublicTexts'),
 ('rights-managePositions', 'managePositions'),
 ('rights-manageMembers', 'manageMembers'),
-('admin', 'admin'),
+('admin', 'Administrateur'),
 ('guest', 'guest'),
+('project-manager', 'Chargé d\'affaires'),
 ('member', 'member')
 ;
 
