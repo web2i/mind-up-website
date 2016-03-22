@@ -16,6 +16,14 @@ class ProjectController extends Controller
     {
         $this->init();
         $this->initData();
+        $project = \DB::table('project')->where('id', $id)->first();
+        if(isset($project))
+        {
+            $this->data['project']['title'] = $project->title;
+            $this->data['project']['description'] = $project->description;
+            $this->data['project']['thumbnail'] = $project->thumbnail;
+            $this->data['project']['date'] = $project->date;
+        }
         return view('project', $this->data);
     }
 }

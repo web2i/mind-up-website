@@ -2,6 +2,8 @@
 
 @section('content')
 
+<?php print_r($project) ?>
+
 <div class="apropos_popup">
 	<h4>A propos de ce site.</h4>
 	<p>Cette page a été développée par l'équipe <bold>Web2i</bold></p>	
