@@ -79,7 +79,9 @@ class Controller extends BaseController
                 'logout' => array(
                     'text' => $this->getText('a-logout'),
                     'url' => $this->BASE_URL.'index.php/logout'),
-            
+            'project' => array(
+                    'text' => $this->getText('a-project'),
+                    'url' => $this->BASE_URL.'index.php/project/0'),
             
             
                 'home' => array(
