@@ -21,8 +21,8 @@ class ProjectsController extends Controller
             for ($i=0 ; $i < count($projects) ;$i++) {
                 if($projects[$i]->visible == 1)
                 {
-                    $this->data['projects'][$i]['title'] = $projects[$i]->title;
-                    $this->data['projects'][$i]['description'] = $projects[$i]->description;
+                    $this->data['projects'][$i]['title'] = $this->getText("project-".($i+1)."-title");
+                    $this->data['projects'][$i]['description'] = $this->getText("project-".($i+1)."-description");
                     $this->data['projects'][$i]['thumbnail'] = $projects[$i]->thumbnail;
                 }
             }

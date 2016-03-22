@@ -19,8 +19,8 @@ class ProjectController extends Controller
         $project = \DB::table('project')->where('id', $id)->first();
         if(isset($project))
         {
-            $this->data['project']['title'] = $project->title;
-            $this->data['project']['description'] = $project->description;
+            $this->data['project']['title'] = $this->getText('project-'.$id.'-title');
+            $this->data['project']['description'] = $this->getText("project-".$id."-description");
             $this->data['project']['thumbnail'] = $project->thumbnail;
             $this->data['project']['date'] = $project->date;
             $pictures = \DB::table('project_picture')->where('projectId', $id)->get();
@@ -31,6 +31,10 @@ class ProjectController extends Controller
                 }
             }
             return view('project', $this->data);
+        }
+        else
+        {
+            //Projet n'existe pas
         }
     }
 
