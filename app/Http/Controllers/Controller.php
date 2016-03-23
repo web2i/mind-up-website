@@ -34,9 +34,9 @@ class Controller extends BaseController
             'css' => $this->BASE_URL.'/css/stylesheet.css',
             'website' => $this->getText('website'),
             'copyright' => $this->getText('copyright'),
-            'p' => array(
+            /*'p' => array(
                 0 => 'DEFAULT',
-                1 => 'DEFAULT'),
+                1 => 'DEFAULT'),*/
             'img' => array(
                 'logo' => array(
                     'src' => $this->BASE_URL.'/ressources/logo.png',
@@ -63,7 +63,7 @@ class Controller extends BaseController
             
                 'profil' => array(
                     'text' => $this->getText('a-profil'),
-                    'url' => $this->BASE_URL.'index.php/profil/0'),
+                    'url' => $this->BASE_URL.'index.php/profil/1'),
                 'edit-profil' => array(
                     'text' => $this->getText('a-edit-profil'),
                     'url' => $this->BASE_URL.'index.php/edit-profil'),
@@ -81,7 +81,7 @@ class Controller extends BaseController
                     'url' => $this->BASE_URL.'index.php/logout'),
             'project' => array(
                     'text' => $this->getText('a-project'),
-                    'url' => $this->BASE_URL.'index.php/project/0'),
+                    'url' => $this->BASE_URL.'index.php/project/1'),
             
             
                 'home' => array(

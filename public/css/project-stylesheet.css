@@ -1,0 +1,47 @@
+
+/*** PROJECT SECTION ***/
+
+.project_content {
+    padding-top:100px;
+    color:#424753;
+    margin-top:0;
+    background-color: white;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+.project_content > ul {
+    list-style-type: none;
+    border-bottom: 1px solid grey;
+    box-shadow: inset 0 2px 0 rgba(0,0,0,.2), 
+    0 2px 4px rgba(0,0,0,0.1);
+    line-height: 0.3;
+    padding: 10px;
+}
+
+.project_image {
+    width: 100%;
+    height: 240px;
+}
+
+.project_technologies {
+    width: 100%;
+    height: 240px;
+    background-color: 
+}
+
+.tech_image {
+    width: 150px;
+    width: 150px; display: inline-block;text-align: center;
+}
+
+.project_team, .project_technologies>h3 {
+    line-height: 6;margin-bottom: 20px;}
+.project_team_list {
+    list-style: none; opacity:0;margin-left: 20px;
+}
+.members_title {
+    float: left;       
+}

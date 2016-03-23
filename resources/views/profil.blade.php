@@ -2,31 +2,29 @@
 
 @section('content')
 
-<div class="apropos_popup">
-	<h4>A propos de ce site.</h4>
-	<p>Cette page a été développée par l'équipe <bold>Web2i</bold></p>	
-	<a class="apropos_input">Ok</a>
-</div>
+<?php print_r($project) ?>
 
-<section class="profil_content"><img class="profil_image" src="ressources/profil.jpeg" />
-
+<section class="profil_content">
+	<img class="profil_image" src="{{ $img['profil-image-1']['src'] }}" alt="" />
 	<ul>
-		<li><h2>Nom Prénom</h2></li>
-		<li><h3>Rôle</h3></li>
-		<li><h3>Adresse mail</h3></li>
-		<li><h3>Numéro</h3></li>
+		<li><h2>{{ $user['firstname'] }} {{ $user['name'] }}</h2></li>
+		<li><h3>{{ $user['job'] }}</h3></li>
+		<li><h3>{{ $user['email'] }}</h3></li>
+		<li><h3>{{ $user['mobile'] }}</h3></li>
 		<span class="ui-icon ui-icon-key"></span>
 	</ul>
 	
-	<h3 class="profil_title">Presentation</h3>
-	<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>
-	<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>	
-	<p>Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>
-<br/><br/><br/>
+	<h3 class="profil_title">{{ $h[1][1] }}</h3>
+	<p>{{ $p[1] }}</p>
+	<p>{{ $p[2] }}</p>
+	<p>{{ $p[3] }}</p>
+
+	<br/><br/><br/>
 	<div class="profil_projects">
-		<img  src="ressources/galerie_projets/projet0.jpg" alt="" />
-		<img  src="ressources/galerie_projets/projet1.jpg" alt="" />
-		<img  src="ressources/galerie_projets/projet2.jpg" alt="" />
+		<img class="tech_image" src="{{ $img['project-image-1']['src'] }}" alt="" />
+		<img class="tech_image" src="{{ $img['project-image-2']['src'] }}" alt="" />
+		<img class="tech_image" src="{{ $img['project-image-3']['src'] }}" alt="" />
+	
 	</div>
 
 </section>
