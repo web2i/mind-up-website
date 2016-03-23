@@ -483,6 +483,10 @@ padding-right: 10%;
     padding-left: 10%;
     padding-right: 10%;}
 .manage_team_title{}
+.manage_team_list{background-color: #e4e6ef;width:80%;margin-left: 10%;border-bottom: 2px solid blue;
+    padding-bottom: 10px;border-radius: 6px;box-shadow: 
+    inset 0 2px 0 rgba(0,0,0,.2), 
+    0 2px 4px rgba(0,0,0,0.1);}
 
 /*** DATA SECTION ***/
 
