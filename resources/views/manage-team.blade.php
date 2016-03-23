@@ -1,3 +1,5 @@
+<?php echo '<pre>'; print_r($members); echo '</pre>'; ?>
+
 @extends('layouts.master')
 
 @section('content')
