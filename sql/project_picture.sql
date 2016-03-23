@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `project_picture`
 --
-
+DROP TABLE IF EXISTS `project_picture`;
 CREATE TABLE IF NOT EXISTS `project_picture` (
 `id` int(11) NOT NULL,
   `projectId` int(11) NOT NULL,
