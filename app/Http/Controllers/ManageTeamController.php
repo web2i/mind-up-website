@@ -12,7 +12,7 @@ class ManageTeamController extends Controller
     {
         parent::initData();
 	//Titles
-	    $this->data['h'][3][1] = 'DEFAULT'; // "Gestion des utilisateurs"	
+	    $this->data['h'][3][1] = $this->getText("manage-team"); // "Gestion des utilisateurs"	
 
         $this->data['title'] = $this->getText('manage-team');
         // Members
