@@ -5,7 +5,7 @@
 <?php print_r($project) ?>
 
 <section class="profil_content">
-	<img class="profil_image" src="{{ $img['profil-image-1']['src'] }}" alt="" />
+	<img class="profil_image" src="{{ $user['picture']['src'] }}" alt="" />
 	<ul>
 		<li><h2>{{ $user['firstname'] }} {{ $user['name'] }}</h2></li>
 		<li><h3>{{ $user['job'] }}</h3></li>

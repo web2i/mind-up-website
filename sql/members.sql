@@ -44,13 +44,14 @@ CREATE TABLE IF NOT EXISTS `members` (
   `pathToCV` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `pathToLicense` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `pathToGrayCard` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `pathToImage` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+  `imageName` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
-INSERT INTO `members` (`id`, `firstname`, `name`, `jobId`, `email`, `hash`, `mobile`, `addressId`, `cityOfBirth`, `pathToStudentCard`, `pathToIdCard`, `pathToCV`, `pathToLicense`, `pathToGrayCard`, `pathToImage`) VALUES
+INSERT INTO `members` (`id`, `firstname`, `name`, `jobId`, `email`, `hash`, `mobile`, `addressId`, `cityOfBirth`, `pathToStudentCard`, `pathToIdCard`, `pathToCV`, `pathToLicense`, `pathToGrayCard`, `imageName`) VALUES
 (0, 'Admin', 'Admin', 'admin', 'admin', '$2y$10$RXa9PP9duKR/HQj8AXao6.Tp3bgcU7r/ehunqMVpBXkI/uPg7H.qi', '0123456789', 0, 'City', '','','','','',''), -- pass = admin
-(1, 'John', 'Do', 'project-manager', 'themail@gmail.com', '', '0621307498', 0, 'City', '','','','','', '')
+(1, 'John', 'Do', 'project-manager', 'themail@gmail.com', '', '0621307498', 0, 'City', '','','','','', ''),
+(2, 'Lama', 'Stico', 'project-manager', 'monmail@gmail.com', '', '0678424835', 0, 'City', '','','','','', 'lama.jpg')
 ;
 
 --

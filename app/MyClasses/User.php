@@ -15,6 +15,7 @@ class User
     protected $id;
     protected $job;
     protected $mobile;
+    protected $pathToImage;
     
     protected function __construct() {
         
@@ -46,6 +47,7 @@ class User
         $instance->firstname = DB::table('members')->where('id', $id)->value('firstname');
         $instance->jobId = DB::table('members')->where('id', $id)->value('jobId');
         $instance->mobile = DB::table('members')->where('id', $id)->value('mobile');
+        $instance->pathToImage = DB::table('members')->where('id', $id)->value('imageName');
         $instance->job = new Job($instance->jobId);
         return $instance;
     } 
@@ -73,4 +75,11 @@ class User
     public function getJobId() {
         return $this->jobId;
     }
+    public function getPathToImage() {
+        $a = "default-profil.png";
+        if($this->pathToImage != "")
+            $a = $this->pathToImage;
+        return $a;
+    }
 }
+

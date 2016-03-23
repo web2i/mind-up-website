@@ -43,6 +43,7 @@ class TeamController extends Controller
             $m['firstname'] = $user->getFirstname();
             $m['jobId'] = $user->getJobId();
             $m['jobText'] = $this->getText($user->getJobTextId());
+            $m['picture']['src'] = $this->getUrl("ressources/images/".$user->getPathToImage());
             array_push($this->data['members'], $m);
         }
         echo '<pre>'; print_r($this->data['members']); echo '</pre>';
