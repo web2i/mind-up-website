@@ -22,7 +22,7 @@ class Controller extends BaseController
     {
         $this->user = User::create();
 	    $this->BASE_URL = env('BASE_URL','http://localhost/~user/mind-up-website/public/');
-	    $this->user = NULL;
+	    //$this->user = NULL;
         if(Session::get('user'))
             $this->user = Session::get('user');
     }

@@ -30,6 +30,11 @@ class AdminController extends Controller
     public function main()
     {
         $this->init();
+        if(!$this->user->getRight('managePositions'))
+        {
+            return "401";
+        }
+        
         $this->initData();
         return view('admin', $this->data);
     }
