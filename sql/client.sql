@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `client` (
 
 INSERT INTO `client` (`id`, `compagnyName`, `comment`, `compagnyLogo`) VALUES
 (1, 'Google', 'Cest de la merde', 'compagnyLogo'),
-(1, 'Apple', 'Carrement', 'compagnyLogo');
+(2, 'Apple', 'Carrement', 'compagnyLogo');
 
 --
 -- Index pour les tables exportées
@@ -48,7 +48,7 @@ INSERT INTO `client` (`id`, `compagnyName`, `comment`, `compagnyLogo`) VALUES
 --
 -- Index pour la table `project_picture`
 --
-ALTER TABLE `project_picture`
+ALTER TABLE `client`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -58,7 +58,7 @@ ALTER TABLE `project_picture`
 --
 -- AUTO_INCREMENT pour la table `project_picture`
 --
-ALTER TABLE `project_picture`
+ALTER TABLE `client`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
