@@ -19,7 +19,8 @@
 
 	<br/><br/><br/>
 	<div class="profil_projects">
-		<img class="tech_image" src="" alt="" />
+		<img class="tech_image" src="{{ $projects[0]['img']['src'] }}" alt="" />
+		<img class="tech_image" src="{{ $projects[1]['img']['src'] }}" alt="" />
 	
 	</div>
 
