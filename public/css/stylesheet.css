@@ -488,6 +488,8 @@ padding-right: 10%;
     inset 0 2px 0 rgba(0,0,0,.2), 
     0 2px 4px rgba(0,0,0,0.1);}
 
+.manage_team_span{}
+
 /*** DATA SECTION ***/
 
 #data {padding-top:100px;
