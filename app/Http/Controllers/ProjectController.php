@@ -19,6 +19,7 @@ class ProjectController extends Controller
         $project = \DB::table('project')->where('id', $id)->first();
         if(isset($project))
         {
+            //On récupère les membres liés au projet
             $userProjects = \DB::table('userProjects')->where('projectId', $id)->get();
             for($i=0; $i < count($userProjects) ; $i++)
             {
@@ -28,11 +29,19 @@ class ProjectController extends Controller
                 $this->data['members'][$i]['jobId'] = $member->jobId;
                 $this->data['members'][$i]['imageName'] = $member->imageName;
             }
+            //On récupère les infos du client lié au projet
             $client = \DB::table('client')->where('id', $project->clientId)->first();
             $this->data['client']['compagnyName'] = $client->compagnyName;
             $this->data['client']['comment'] = $client->comment;
             $this->data['client']['compagnyLogo'] = $client->compagnyLogo;
-            print_r($this->data['client']);
+
+            //On récupère les images du projet
+            $projectPictures = \DB::table('project_picture')->where('projectId', $id)->get();
+            for($i=0; $i < count($projectPictures) ; $i++)
+            {
+                $this->data['picture'][$i] = $projectPictures[$i]->picturePath;
+            }
+            print_r($this->data['picture']);
             
 
             $this->data['h'][1][1] = 'defaultH';
