@@ -9,7 +9,8 @@
 	<ul class="manage_team_list">
 		<?php
 			foreach($members as $member)
-			{			
+			{		
+				//echo '<div class="manage_team_span">';	
 				echo '<a class="members_link" href="'.$member['src'].'">';
 				echo '<li class="member">';
 				echo '<img src="'.$member['picture']['src'].'">';
@@ -19,6 +20,15 @@
 				echo '</div>';
 				echo '</li>';
 				echo '</a>';
+				//echo '</div>';
+				if($member['important']==0)
+				{
+					echo '<input type="checkbox">';
+				}
+				else
+				{
+					echo '<input type="checkbox" checked>';
+				}
 				echo '</br>';
 			}
 		?>
