@@ -30,7 +30,7 @@ class ProfilController extends Controller
             $project['src'] = $this->getUrl("index.php/project/".$p['projectId']);
             $a = DB::table('project')->where('id','=', $p['projectId'])->select('thumbnail')->first()->thumbnail;
             if( !($a != "") )
-                $a = "default-project.jpg";
+                $a = "default-project.png";
             $project['img']['src'] = $this->getUrl("ressources/images/".$a);
             
             array_push($this->data['projects'], $project);
