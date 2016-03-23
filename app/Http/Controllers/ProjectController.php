@@ -19,17 +19,36 @@ class ProjectController extends Controller
         $project = \DB::table('project')->where('id', $id)->first();
         if(isset($project))
         {
-            $this->data['project']['title'] = $this->getText('project-'.$id.'-title');
-            $this->data['project']['description'] = $this->getText("project-".$id."-description");
-            $this->data['project']['thumbnail'] = $project->thumbnail;
-            $this->data['project']['date'] = $project->date;
-            $pictures = \DB::table('project_picture')->where('projectId', $id)->get();
-            if(isset($pictures))
+            $userProjects = \DB::table('userProjects')->where('projectId', $id)->get();
+            for($i=0; $i < count($userProjects) ; $i++)
             {
-                for ($i=0 ; $i < count($pictures) ; $i++) {
-                    $this->data['project']['picture'][$i] = $pictures[$i]->picturePath;
-                }
+                $member = \DB::table('members')->where('id', $userProjects[$i]->memberId)->first();
+                $this->data['members'][$i]['name'] = $member->name;
+                $this->data['members'][$i]['firstname'] = $member->firstname;
+                $this->data['members'][$i]['jobId'] = $member->jobId;
+                $this->data['members'][$i]['imageName'] = $member->imageName;
             }
+            $client = \DB::table('client')->where('id', $project->clientId)->first();
+            $this->data['client']['compagnyName'] = $client->compagnyName;
+            $this->data['client']['comment'] = $client->comment;
+            $this->data['client']['compagnyLogo'] = $client->compagnyLogo;
+            print_r($this->data['client']);
+            
+
+            $this->data['h'][1][1] = 'defaultH';
+            $this->data['h'][1][2] = 'defaultH';
+            $this->data['h'][1][3] = 'defaultH';
+            $this->data['h'][1][4] = 'defaultH';
+            $this->data['h'][2][1] = 'defaultH';
+            $this->data['h'][2][2] = 'defaultH';
+            $this->data['h'][2][3] = 'defaultH';
+            $this->data['h'][3][1] = 'defaultH';
+            $this->data['h'][3][2] = 'defaultH';
+            $this->data['p'][1] = 'defaultP';
+            $this->data['p'][2] = 'defaultP';
+            $this->data['p'][3] = 'defaultP';
+            $this->data['p'][4] = 'defaultP';
+            $this->data['p'][5] = 'defaultP';
             return view('project', $this->data);
         }
         else
