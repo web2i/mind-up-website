@@ -32,7 +32,7 @@ class ProfilController extends Controller
         $this->data['user']['mobile'] = $user->getMobile();
         $this->data['user']['picture']['src'] = $this->getUrl("ressources/images/".$user->getPathToImage());
         
-        echo '<pre>'; print_r($this->data['user']); echo '</pre>';
+        // echo '<pre>'; print_r($this->data['user']); echo '</pre>';
     }
 
     public function main($id)

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use DB;
+use App\MyClasses\User;
 
 class HomeController extends Controller
 {
@@ -40,6 +42,24 @@ class HomeController extends Controller
         $this->data['p'][6] = $this->getText('home-p-6');
         $this->data['p'][7] = $this->getText('home-p-7');
         $this->data['p'][8] = $this->getText('home-p-8');
+        // Members
+        $this->data['members'] = [];
+        $members = DB::table('members')->select('id')->where('important', '=', 1)->distinct()->get();
+        $members = json_decode(json_encode($members), True);
+        foreach($members as $member)
+        {
+            $user = User::createFromId($member['id']);
+            $m = [];
+            $m['name'] = $user->getName();
+            $m['firstname'] = $user->getFirstname();
+            $m['jobId'] = $user->getJobId();
+            $m['jobText'] = $this->getText($user->getJobTextId());
+            $m['picture']['src'] = $this->getUrl("ressources/images/".$user->getPathToImage());
+            $m['src'] = $this->getUrl("index.php/profil/".$user->getId());
+            array_push($this->data['members'], $m);
+        }
+        // Help
+        //echo '<pre>'; print_r($this->data['members']); echo '</pre>';
     }
 
     public function main()
