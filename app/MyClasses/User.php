@@ -48,6 +48,7 @@ class User
         $instance->jobId = DB::table('members')->where('id', $id)->value('jobId');
         $instance->mobile = DB::table('members')->where('id', $id)->value('mobile');
         $instance->pathToImage = DB::table('members')->where('id', $id)->value('imageName');
+        $instance->important = DB::table('members')->where('id', $id)->value('important');
         $instance->job = new Job($instance->jobId);
         return $instance;
     } 
@@ -59,6 +60,9 @@ class User
     
     public function getName() {
         return $this->name;
+    }
+    public function getImportant() {
+        return $this->important;
     }
     public function getFirstname() {
         return $this->firstname;

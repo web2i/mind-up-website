@@ -27,6 +27,7 @@ class ManageTeamController extends Controller
             $m['picture']['src'] = $this->getUrl("ressources/images/".$user->getPathToImage());
             $m['src'] = $this->getUrl("index.php/edit-profil/".$user->getId());
             $m['department'] = $user->getDepartement();
+            $m['important'] = $user->getImportant();
             array_push($this->data['members'], $m);
         }
     }
