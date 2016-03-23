@@ -6,12 +6,12 @@
 	<h3 class="members_title">{{ $h[3][1] }}</h3>
 	<p class="members_text">{{ $p[1] }}</p>
 	<?php
-	foreach($jobs as $job)
+	foreach($departments as $job)
 	{
 		$empty=1;
 		foreach($members as $member)
 		{
-			if($member['jobId'] == $job['textId'])
+			if($member['department'] == $job['department'])
 			{
 				$empty=0;
 			}
@@ -25,7 +25,7 @@
 	
 		foreach($members as $member)
 		{
-			if($member['jobId'] == $job['textId'])
+			if($member['department'] == $job['department'])
 			{
 				echo '<a class="members_link" href="'.$member['src'].'">';
 				echo '<li class="member">';

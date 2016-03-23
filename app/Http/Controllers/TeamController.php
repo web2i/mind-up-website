@@ -41,23 +41,25 @@ class TeamController extends Controller
             $m['jobText'] = $this->getText($user->getJobTextId());
             $m['picture']['src'] = $this->getUrl("ressources/images/".$user->getPathToImage());
             $m['src'] = $this->getUrl("index.php/profil/".$user->getId());
+            $m['department'] = $user->getDepartement();
             array_push($this->data['members'], $m);
         }
         // Jobs
-        $this->data['jobs'] = [];
-        $jobs = DB::table('jobs')->select('id', 'textId')->distinct()->orderBy('id', 'asc')->get();
-        $jobs = json_decode(json_encode($jobs), True);
-        foreach($jobs as $j)
+        $this->data['departments'] = [];
+        $departments = DB::table('jobs')->select('id','department')->groupBy('department')->distinct()->orderBy('id', 'asc')->get();
+        $departments = json_decode(json_encode($departments), True);
+        foreach($departments as $d)
         {
-            $job = [];
-            $job['id'] = $j['id'];
-            $job['textId'] = $j['textId'];
-            $job['text'] = $this->getText($j['textId']);
-            if($job['id'] > 0)
-                array_push($this->data['jobs'], $job);
+            if($d['id'] > 0) {
+                $department = [];
+                $department['id'] = $d['id'];
+                $department['department'] = $d['department'];
+                $department['text'] = $this->getText($d['department']);
+                array_push($this->data['departments'], $department);
+            }
         }
         // Help
-        //echo '<pre>'; print_r($this->data['jobs']); echo '</pre>';
+        //echo '<pre>'; print_r($this->data['departments']); echo '</pre>';
         //echo '<pre>'; print_r($this->data['members']); echo '</pre>';
     }
 

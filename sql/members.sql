@@ -52,7 +52,16 @@ INSERT INTO `members` (`id`, `firstname`, `name`, `jobId`, `email`, `hash`, `mob
 (0, 'Admin', 'Admin', 'admin', 'admin', '$2y$10$RXa9PP9duKR/HQj8AXao6.Tp3bgcU7r/ehunqMVpBXkI/uPg7H.qi', '0123456789', 0, 'City', '','','','','','',0), -- pass = admin
 (1, 'John', 'Do', 'project-manager', 'themail@gmail.com', '', '0621307498', 0, 'City', '','','','','', '',0),
 (2, 'Lama', 'Stico', 'project-manager', 'monmail@gmail.com', '', '0678424835', 0, 'City', '','','','','', 'lama.jpg', 1),
-(3, 'El', 'Presidente', 'president', 'prez@gmail.com', '', '0678424835', 0, 'City', '','','','','', 'president.gif', 1)
+(3, 'El', 'Presidente', 'president', 'prez@gmail.com', '', '0678424835', 0, 'City', '','','','','', 'president.gif', 1),
+(4, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 1),
+(5, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 1),
+(6, 'Johny', 'Johnson', 'deputy-tresorer', '', '', '0678424835', 0, 'City', '','','','','', '', 1),
+(7, 'Johny', 'Johnson', 'tresorer', '', '', '0678424835', 0, 'City', '','','','','', '', 1),
+(8, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
+(9, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
+(10, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
+(11, 'Johny', 'Johnson', 'project-manager', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
+(12, 'Johny', 'Johnson', 'project-manager', '', '', '0678424835', 0, 'City', '','','','','', '', 0)
 ;
 
 --

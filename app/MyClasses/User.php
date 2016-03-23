@@ -78,6 +78,9 @@ class User
     public function getId() {
         return $this->id;
     }
+    public function getDepartement() {
+        return $this->job->getDepartement();
+    }
     public function getPathToImage() {
         $a = "default-profil.png";
         if($this->pathToImage != "")
