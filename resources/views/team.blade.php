@@ -15,13 +15,15 @@
 		{
 			if($member['jobId'] == $job['textId'])
 			{
-				echo "<li class='member'>";
+				echo '<a class="members_link" href="'.$member['src'].'">';
+				echo '<li class="member">';
 				echo '<img src="'.$member['picture']['src'].'">';
 				echo'<div>';
 				echo'<h3>'.$member['firstname'].' '.$member['name'].'</h3>';
 				echo '<span>'.$member['jobText'].'</span>';
 				echo '</div>';
 				echo '</li>';
+				echo '</a>';
 			}
 			
 		}
