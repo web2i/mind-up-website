@@ -1,15 +1,17 @@
-﻿@extends('layouts.master')
+﻿<?php 
+    if(isset($projects)) { echo '<pre>'; print_r($projects); echo '</pre>';}
+    ?>
+
+@extends('layouts.master')
 
 @section('content')
+
 
 <section id="content">
 	<h2 class="content_title">L'ensemble de nos projets.</h2>
 
 	<!-- Affiche les infos de chaque projet -->
-    <?php 
-    if(isset($projects))
-    	print_r($projects);
-    ?>
+    
 
 	<!-- Partie provisoire pour générer une galerie "test" -->
 
