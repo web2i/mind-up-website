@@ -14,10 +14,7 @@ class TeamController extends Controller
     {
         parent::initData();
 	//Titles
-	    $this->data['h'][3][1] = 'DEFAULT'; // "Notre equipe"
-	    $this->data['h'][3][2] = 'DEFAULT'; // name of member
-	    $this->data['h'][3][3] = 'DEFAULT'; // name of category (ex: "Presidence")
-	
+	    $this->data['h'][3][1] = 'DEFAULT'; // "Notre equipe"	
 
 	    //Paragraphes
 	    $this->data['p'][1] = 'DEFAULT'; // "Voici notre equipe toujours prete a vous aider pour"....

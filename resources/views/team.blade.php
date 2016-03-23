@@ -8,8 +8,20 @@
 	<?php
 	foreach($jobs as $job)
 	{
-		echo '<h3 class="members-category">'.$job['text'].'</h3>';
-		echo '<ul class="members_list">';
+		$empty=1;
+		foreach($members as $member)
+		{
+			if($member['jobId'] == $job['textId'])
+			{
+				$empty=0;
+			}
+		}
+		
+		if($empty == 0)
+		{
+			echo '<h3 class="members-category">'.$job['text'].'</h3>';
+			echo '<ul class="members_list">';
+		}
 	
 		foreach($members as $member)
 		{
@@ -27,131 +39,12 @@
 			}
 			
 		}
-		echo '</ul>';
+		if($empty == 0)
+		{
+			echo '</ul>';
+		}
 	}
 	?>
-	
-
-	<!--<h3 class="members-category">{{ $h[3][3] }}</h3>
-	<ul class="members_list">
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-	</ul>
-	<h3 class="members-category">{{ $h[3][3] }}</h3>
-	<ul class="members_list">
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-	</ul>
-	<h3 class="members-category">{{ $h[3][3] }}</h3>
-	<ul class="members_list">
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-	</ul>
-	<h3 class="members-category">{{ $h[3][3] }}</h3>
-	<ul class="members_list">
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-	</ul>
-	<h3 class="members-category">{{ $h[3][3] }}</h3>
-	<ul class="members_list">
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-		<li class="member">
-			<img src="{{ $img['profil']['src'] }}">
-			<div>
-				<h3>{{ $h[3][2] }}</h3>
-				<span>{{ $span[1] }}</span>
-			</div>
-		</li>
-	</ul> -->
 </section>
 
 @stop
