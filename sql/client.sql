@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 23 Mars 2016 à 00:12
+-- Généré le :  Mer 23 Mars 2016 à 15:06
 -- Version du serveur :  5.5.47-0+deb8u1
 -- Version de PHP :  5.6.17-0+deb8u1
 
@@ -23,32 +23,32 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `project`
+-- Structure de la table `client`
 --
-DROP TABLE IF EXISTS `project`;
-CREATE TABLE IF NOT EXISTS `project` (
+DROP TABLE IF EXISTS `client`;
+CREATE TABLE IF NOT EXISTS `client` (
 `id` int(11) NOT NULL,
-  `visible` tinyint(1) NOT NULL,
-  `date` date NOT NULL,
-  `thumbnail` varchar(255) NOT NULL,
-  `clientId` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `compagnyName` varchar(255) NOT NULL,
+  `comment` varchar(255) NOT NULL,
+  `compagnyLogo` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `project`
+-- Contenu de la table `project_picture`
 --
 
-INSERT INTO `project` (`id`, `visible`, `date`, `thumbnail`,`clientId` ) VALUES
-(1, 1, '2016-03-22', 'pathImg', 1);
+INSERT INTO `client` (`id`, `compagnyName`, `comment`, `compagnyLogo`) VALUES
+(1, 'Google', 'Cest de la merde', 'compagnyLogo'),
+(1, 'Apple', 'Carrement', 'compagnyLogo');
 
 --
 -- Index pour les tables exportées
 --
 
 --
--- Index pour la table `project`
+-- Index pour la table `project_picture`
 --
-ALTER TABLE `project`
+ALTER TABLE `project_picture`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -56,10 +56,10 @@ ALTER TABLE `project`
 --
 
 --
--- AUTO_INCREMENT pour la table `project`
+-- AUTO_INCREMENT pour la table `project_picture`
 --
-ALTER TABLE `project`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+ALTER TABLE `project_picture`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

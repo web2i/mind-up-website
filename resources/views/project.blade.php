@@ -2,8 +2,6 @@
 
 @section('content')
 
-<?php print_r($project) ?>
-
 <section class="project_content">
 	<img class="project_image" src="{{ $img['project-image-1']['src'] }}" alt="" />
 	<ul>

@@ -19,17 +19,21 @@ class ProjectController extends Controller
         $project = \DB::table('project')->where('id', $id)->first();
         if(isset($project))
         {
-            $this->data['project']['title'] = $this->getText('project-'.$id.'-title');
-            $this->data['project']['description'] = $this->getText("project-".$id."-description");
-            $this->data['project']['thumbnail'] = $project->thumbnail;
-            $this->data['project']['date'] = $project->date;
-            $pictures = \DB::table('project_picture')->where('projectId', $id)->get();
-            if(isset($pictures))
+            $userProjects = \DB::table('userProjects')->where('projectId', $id)->get();
+            for($i=0; $i < count($userProjects) ; $i++)
             {
-                for ($i=0 ; $i < count($pictures) ; $i++) {
-                    $this->data['img'][$pictures[$i]->id_img]['src'] = $pictures[$i]->picturePath;
-                }
+                $member = \DB::table('members')->where('id', $userProjects[$i]->memberId)->first();
+                $this->data['members'][$i]['name'] = $member->name;
+                $this->data['members'][$i]['firstname'] = $member->firstname;
+                $this->data['members'][$i]['jobId'] = $member->jobId;
+                $this->data['members'][$i]['imageName'] = $member->imageName;
             }
+            $client = \DB::table('client')->where('id', $project->clientId)->first();
+            $this->data['client']['compagnyName'] = $client->compagnyName;
+            $this->data['client']['comment'] = $client->comment;
+            $this->data['client']['compagnyLogo'] = $client->compagnyLogo;
+            print_r($this->data['client']);
+            
 
             $this->data['h'][1][1] = 'defaultH';
             $this->data['h'][1][2] = 'defaultH';
