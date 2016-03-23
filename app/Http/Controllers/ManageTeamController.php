@@ -15,6 +15,9 @@ class ManageTeamController extends Controller
 	    $this->data['h'][3][1] = $this->getText("manage-team"); // "Gestion des utilisateurs"	
 
         $this->data['title'] = $this->getText('manage-team');
+	//Buttons
+	$this->data['input'][1] = 'DEFAULT'; // "Mettre a jour"
+
         // Members
         $this->data['members'] = [];
         $members = DB::table('members')->select('id')->distinct()->get();
