@@ -11,7 +11,8 @@ CREATE TABLE IF NOT EXISTS `userProjects` (
 
 INSERT INTO `userProjects` (`id`, `projectId`, `memberId`) VALUES
 (0, 0, 0),
-(1, 1, 1)
+(1, 1, 1),
+(2, 2, 1)
 ;
 
 ALTER TABLE `userProjects`
