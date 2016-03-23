@@ -37,7 +37,7 @@ class ProfilController extends Controller
         }
         // Help
         // echo '<pre>'; print_r($this->data['user']); echo '</pre>';
-        echo '<pre>'; print_r($this->data['projects']); echo '</pre>';
+        // echo '<pre>'; print_r($this->data['projects']); echo '</pre>';
         //echo '<pre>'; print_r($projects); echo '</pre>';
     }
 
