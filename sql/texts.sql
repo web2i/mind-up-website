@@ -84,7 +84,9 @@ INSERT INTO `texts` (`textId`, `french`) VALUES
 ('admin', 'Administrateur'),
 ('guest', 'guest'),
 ('project-manager', 'Chargé d\'affaires'),
-('member', 'member')
+('member', 'member'),
+('project-1-title','project-1-title'),
+('project-1-description','project-1-description')
 ;
 
 
