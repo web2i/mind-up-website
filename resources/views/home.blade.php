@@ -33,18 +33,21 @@
 	<p class="team_text">{{ $p[7] }}</p>
 	<ul class="team_list">
 	    <?php
-	        for($i = 0 ; $i < 9 ; $i++)
-	        {
-	            echo '
-	                <li class="team_member">
-			            <img src="'.$img['profil']['src'].'">
-			            <div>
-				            <h3>'. $h[3][2] .'</h3>
-				            <p>'. $p[8] .'</p>
-			            </div>
-		            </li>
-	            ';
-	        }
+	        foreach($members as $member)
+		{
+			
+				echo '<a class="members_link" href="'.$member['src'].'">';
+				echo '<li class="team_member">';
+				echo '<img src="'.$member['picture']['src'].'">';
+				echo'<div>';
+				echo'<h3>'.$member['firstname'].' '.$member['name'].'</h3>';
+				echo '<span>'.$member['jobText'].'</span>';
+				echo '</div>';
+				echo '</li>';
+				echo '</a>';
+			
+			
+		}
 	    ?>
 	</ul>
 </section>
