@@ -1,9 +1,23 @@
-@extends('layouts.master')
+
+
+﻿@extends('layouts.master')
 
 @section('content')
 
-<section id="edit-profil">
+<!--<section class="edit-profil">-->
+<section class="profil_content">
+	<img class="profil_image" src="{{ $user['picture']['src'] }}" alt="" />
+	<ul>
+		<li><h2>{{ $user['firstname'] }} {{ $user['name'] }}</h2></li>
+		<li><h3>{{ $user['job'] }}</h3></li>
+		<li><h3>{{ $user['email'] }}</h3></li>
+		<li><h3>{{ $user['mobile'] }}</h3></li>
+		<span class="ui-icon ui-icon-key"></span>
+	</ul>
 	
-</section>
+	<p>{{ $user['description'] }}</p>
+	
+	</br>
 
+</section>
 @stop

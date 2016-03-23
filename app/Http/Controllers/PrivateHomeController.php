@@ -21,7 +21,7 @@ class PrivateHomeController extends Controller
         
         if(!$this->user->getRight('browseBackOffice'))
         {
-            return redirect('/home');
+            return "401";//redirect('/home');
         }
         
         $this->initData();

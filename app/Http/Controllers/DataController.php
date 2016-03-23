@@ -23,7 +23,7 @@ class DataController extends Controller
         
         if(!$this->user->getRight('editPublicTexts'))
         {
-            return redirect('/home');
+            return "401";
         }
         
         $this->initData();
