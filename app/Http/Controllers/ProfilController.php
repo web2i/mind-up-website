@@ -30,6 +30,8 @@ class ProfilController extends Controller
         $this->data['user']['job'] = $this->getText($user->getJobTextId());
         $this->data['user']['email'] = $user->getEmail();
         $this->data['user']['mobile'] = $user->getMobile();
+        $this->data['user']['picture']['src'] = $this->getUrl("ressources/images/".$user->getPathToImage());
+        
         echo '<pre>'; print_r($this->data['user']); echo '</pre>';
     }
 
