@@ -56,11 +56,14 @@ INSERT INTO `texts` (`public`, `textId`, `french`) VALUES
 (1, 'a-edit-figures', 'edit-figures'),
 (1, 'a-edit-projects', 'edit-projects'),
 (1, 'a-edit-texts', 'edit-texts'),
-(1, 'a-logout', 'logout'),
+(1, 'a-logout', 'Logout'),
 (1, 'a-project', 'project'),
+(1, 'a-private-home', 'Back Office'),
 
 (1, 'a-manage-team', 'Manage Team'),
 (1, 'manage-team', 'Gestion des membres'),
+
+(1, 'private-home-title', 'Back office'),
 
 (1, 'a-projects', 'Projects'),
 (1, 'home-h-1-1', 'home-h-1-1'),

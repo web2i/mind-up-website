@@ -22,8 +22,9 @@ class Controller extends BaseController
     {
         $this->user = User::create();
 	    $this->BASE_URL = env('BASE_URL','http://localhost/~user/mind-up-website/public/');
+	    $this->user = NULL;
         if(Session::get('user'))
-        $this->user = Session::get('user');
+            $this->user = Session::get('user');
     }
     
     protected function initData()
@@ -98,9 +99,21 @@ class Controller extends BaseController
                 'team' => array(
                     'text' => $this->getText('a-team'),
                     'url' => $this->getUrl('index.php/team')),
+                'private-home' => array(
+                    'text' => $this->getText('a-private-home'),
+                    'url' => $this->BASE_URL.'index.php/private-home'),
                 'projects' => array(
                     'text' => $this->getText('a-projects'),
                     'url' => $this->getUrl('index.php/projects'))));
+        $this->data['user']['logged'] = 0;
+        $this->data['user']['login'] = '';
+        $this->data['user']['link'] = '';
+        if(Session::get('user'))
+        {
+            $this->data['user']['logged'] = 1;
+            $this->data['user']['text'] = $this->user->getFirstname();
+            $this->data['user']['url'] = $this->getUrl("index.php/edit-profil/".$this->user->getId());
+        }
     }
     
     protected function getText($id)
