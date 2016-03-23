@@ -47,7 +47,7 @@ class User
         $instance->firstname = DB::table('members')->where('id', $id)->value('firstname');
         $instance->jobId = DB::table('members')->where('id', $id)->value('jobId');
         $instance->mobile = DB::table('members')->where('id', $id)->value('mobile');
-        $instance->pathToImage = DB::table('members')->where('id', $id)->value('pathToImage');
+        $instance->pathToImage = DB::table('members')->where('id', $id)->value('imageName');
         $instance->job = new Job($instance->jobId);
         return $instance;
     } 
