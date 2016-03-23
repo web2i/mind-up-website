@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 --
 DROP TABLE IF EXISTS `jobs`;
 CREATE TABLE IF NOT EXISTS `jobs` (
+  `id` int(11) NOT NULL,
   `textId` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `browseBackOffice` tinyint(1) NOT NULL,
   `editSelfInfos` tinyint(1) NOT NULL,
@@ -43,11 +44,12 @@ CREATE TABLE IF NOT EXISTS `jobs` (
 
 
 
-INSERT INTO `jobs` (`textId`, `browseBackOffice`, `editSelfInfos`, `readOtherInfos`, `manageProject`, `editFigures`, `editOtherInfos`, `editPublicTexts`, `managePositions`, `manageMembers`) VALUES
-    ('admin', 1, 1, 1, 1, 1, 1, 1, 1, 1),
-    ('guest', 0, 0, 0, 0, 0, 0, 0, 0, 0),
-    ('member', 1, 1, 1, 0, 0, 0, 0, 0, 0),
-    ('project-manager', 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO `jobs` (`id`, `textId`, `browseBackOffice`, `editSelfInfos`, `readOtherInfos`, `manageProject`, `editFigures`, `editOtherInfos`, `editPublicTexts`, `managePositions`, `manageMembers`) VALUES
+    (-1, 'guest', 0, 0, 0, 0, 0, 0, 0, 0, 0),
+    (0, 'admin', 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    (1, 'president', 0, 0, 0, 0, 0, 0, 0, 0, 0),
+    (2, 'project-manager', 0, 0, 0, 0, 0, 0, 0, 0, 0),
+    (3, 'member', 1, 1, 1, 0, 0, 0, 0, 0, 0);
 
 --
 -- Indexes for dumped tables

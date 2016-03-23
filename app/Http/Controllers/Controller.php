@@ -31,7 +31,9 @@ class Controller extends BaseController
         $this->data = array(
             'js' => $this->BASE_URL.'/js/functions.js',
             'jquery' => $this->BASE_URL.'/js/jquery-1.11.3.js',
-            'css' => $this->BASE_URL.'/css/stylesheet.css',
+            'css' => array(
+                0 => $this->BASE_URL.'/css/project-stylesheet.css',
+                1 => $this->BASE_URL.'/css/stylesheet.css'),
             'website' => $this->getText('website'),
             'copyright' => $this->getText('copyright'),
             /*'p' => array(

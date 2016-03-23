@@ -4,7 +4,8 @@
     <head>	
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	    <title>{{ $website }} - {{ $title }}</title>
-	    <link rel="stylesheet" type="text/css" href="{{ $css }}" media="all"/>
+	    <link rel="stylesheet" type="text/css" href="{{ $css[0] }}" media="all"/>
+	    <link rel="stylesheet" type="text/css" href="{{ $css[1] }}" media="all"/>
 	    <script type="text/javascript" src="{{ $jquery }}"></script>
 	    <script type="text/javascript" src="{{ $js }}"></script>
     </head>

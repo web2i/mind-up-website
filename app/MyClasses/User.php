@@ -75,6 +75,9 @@ class User
     public function getJobId() {
         return $this->jobId;
     }
+    public function getId() {
+        return $this->id;
+    }
     public function getPathToImage() {
         $a = "default-profil.png";
         if($this->pathToImage != "")

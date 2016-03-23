@@ -27,9 +27,24 @@ class ProjectController extends Controller
             if(isset($pictures))
             {
                 for ($i=0 ; $i < count($pictures) ; $i++) {
-                    $this->data['project']['picture'][$i] = $pictures[$i]->picturePath;
+                    $this->data['img'][$pictures[$i]->id_img]['src'] = $pictures[$i]->picturePath;
                 }
             }
+
+            $this->data['h'][1][1] = 'defaultH';
+            $this->data['h'][1][2] = 'defaultH';
+            $this->data['h'][1][3] = 'defaultH';
+            $this->data['h'][1][4] = 'defaultH';
+            $this->data['h'][2][1] = 'defaultH';
+            $this->data['h'][2][2] = 'defaultH';
+            $this->data['h'][2][3] = 'defaultH';
+            $this->data['h'][3][1] = 'defaultH';
+            $this->data['h'][3][2] = 'defaultH';
+            $this->data['p'][1] = 'defaultP';
+            $this->data['p'][2] = 'defaultP';
+            $this->data['p'][3] = 'defaultP';
+            $this->data['p'][4] = 'defaultP';
+            $this->data['p'][5] = 'defaultP';
             return view('project', $this->data);
         }
         else

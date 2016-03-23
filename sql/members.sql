@@ -35,7 +35,6 @@ CREATE TABLE IF NOT EXISTS `members` (
   `jobId` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  
   `mobile` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `addressId` int(11) NOT NULL,
   `cityOfBirth` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -44,14 +43,16 @@ CREATE TABLE IF NOT EXISTS `members` (
   `pathToCV` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `pathToLicense` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `pathToGrayCard` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `imageName` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+  `imageName` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `important` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
-INSERT INTO `members` (`id`, `firstname`, `name`, `jobId`, `email`, `hash`, `mobile`, `addressId`, `cityOfBirth`, `pathToStudentCard`, `pathToIdCard`, `pathToCV`, `pathToLicense`, `pathToGrayCard`, `imageName`) VALUES
-(0, 'Admin', 'Admin', 'admin', 'admin', '$2y$10$RXa9PP9duKR/HQj8AXao6.Tp3bgcU7r/ehunqMVpBXkI/uPg7H.qi', '0123456789', 0, 'City', '','','','','',''), -- pass = admin
-(1, 'John', 'Do', 'project-manager', 'themail@gmail.com', '', '0621307498', 0, 'City', '','','','','', ''),
-(2, 'Lama', 'Stico', 'project-manager', 'monmail@gmail.com', '', '0678424835', 0, 'City', '','','','','', 'lama.jpg')
+INSERT INTO `members` (`id`, `firstname`, `name`, `jobId`, `email`, `hash`, `mobile`, `addressId`, `cityOfBirth`, `pathToStudentCard`, `pathToIdCard`, `pathToCV`, `pathToLicense`, `pathToGrayCard`, `imageName`, `important`) VALUES
+(0, 'Admin', 'Admin', 'admin', 'admin', '$2y$10$RXa9PP9duKR/HQj8AXao6.Tp3bgcU7r/ehunqMVpBXkI/uPg7H.qi', '0123456789', 0, 'City', '','','','','','',0), -- pass = admin
+(1, 'John', 'Do', 'project-manager', 'themail@gmail.com', '', '0621307498', 0, 'City', '','','','','', '',0),
+(2, 'Lama', 'Stico', 'project-manager', 'monmail@gmail.com', '', '0678424835', 0, 'City', '','','','','', 'lama.jpg', 1),
+(3, 'El', 'Presidente', 'president', 'prez@gmail.com', '', '0678424835', 0, 'City', '','','','','', 'president.gif', 1)
 ;
 
 --
