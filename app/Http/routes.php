@@ -29,10 +29,12 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/data', 'DataController@main');
     Route::get('/edit-texts', 'DataController@main');
     
-     Route::get('/admin', 'AdminController@main');
-      Route::get('/manage-members', 'AdminController@main');
+    Route::get('/admin', 'AdminController@main');
+    Route::get('/manage-members', 'AdminController@main');
       
     Route::get('/profil/{id}', 'ProfilController@main');
+    
+    Route::get('/manage-team', 'ManageTeamController@main');
     
     //Route::get('auth/login', 'Auth\AuthController@getLogin');
     
