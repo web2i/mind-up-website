@@ -104,7 +104,9 @@ INSERT INTO `texts` (`public`, `textId`, `french`) VALUES
 (1, 'project-management', 'Suivi de projets'),
 (1, 'members', 'Membres'),
 (1, 'finances', 'Trésorerie'),
-(1, 'developers', 'Développeurs')
+(1, 'developers', 'Développeurs'),
+(1, 'our-team', 'Notre équipe'),
+(1, 'our-team-description', 'Voici notre équipe, toujours prête à vous aider pour vos projets, que ce soit dans le domaine de l\'informatique ou blablabla...')
 
 ;
 

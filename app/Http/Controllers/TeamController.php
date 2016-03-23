@@ -14,10 +14,10 @@ class TeamController extends Controller
     {
         parent::initData();
 	//Titles
-	    $this->data['h'][3][1] = 'DEFAULT'; // "Notre equipe"	
+	    $this->data['h'][3][1] = $this->getText("our-team"); // "Notre equipe"	
 
 	    //Paragraphes
-	    $this->data['p'][1] = 'DEFAULT'; // "Voici notre equipe toujours prete a vous aider pour"....
+	    $this->data['p'][1] = $this->getText("our-team-description"); // "Voici notre equipe toujours prete a vous aider pour"....
 
 	    //Span
 	    $this->data['span'][1] = 'DEFAULT'; //job of member
