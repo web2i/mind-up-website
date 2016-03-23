@@ -43,7 +43,8 @@ CREATE TABLE IF NOT EXISTS `members` (
   `pathToIdCard` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `pathToCV` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `pathToLicense` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `pathToGrayCard` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+  `pathToGrayCard` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `pathToImage` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
