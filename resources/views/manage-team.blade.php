@@ -1,5 +1,3 @@
-<?php echo '<pre>'; print_r($members); echo '</pre>'; ?>
-
 @extends('layouts.master')
 
 @section('content')
@@ -10,7 +8,7 @@
 		<?php
 			echo '<table>';	
 			echo '<tr>';
-			echo "<th>Membre</th><th>Affichage page d'accueil</th>";
+			echo "<th class='manage_team_th'>Membre</th><th class='manage_team_th_checkbox'>Affichage page d'accueil</th>";
 			echo '</tr>';
 			foreach($members as $member)
 			{	
