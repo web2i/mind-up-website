@@ -59,6 +59,9 @@ INSERT INTO `texts` (`public`, `textId`, `french`) VALUES
 (1, 'a-logout', 'logout'),
 (1, 'a-project', 'project'),
 
+(1, 'a-manage-team', 'Manage Team'),
+(1, 'manage-team', 'Manage Team'),
+
 (1, 'a-projects', 'Projects'),
 (1, 'home-h-1-1', 'home-h-1-1'),
 (1, 'home-h-2-1', 'home-h-2-1'),

@@ -84,6 +84,9 @@ class Controller extends BaseController
             'project' => array(
                     'text' => $this->getText('a-project'),
                     'url' => $this->BASE_URL.'index.php/project/1'),
+            'manage-team' => array(
+                    'text' => $this->getText('a-manage-team'),
+                    'url' => $this->BASE_URL.'index.php/manage-team'),
             
             
                 'home' => array(

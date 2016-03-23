@@ -21,6 +21,7 @@
 				    
 				    <li><a href="{{ $a['project']['url']}}">{{ $a['project']['text'] }}</a></li>
 				    <li><a href="{{ $a['profil']['url']}}">{{ $a['profil']['text'] }}</a></li>
+				    <li><a href="{{ $a['manage-team']['url']}}">{{ $a['manage-team']['text'] }}</a></li>
 				    
 				    
 				    <li><a href="{{ $a['login']['url']}}">{{ $a['login']['text'] }}</a></li>
