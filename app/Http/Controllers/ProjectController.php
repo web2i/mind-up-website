@@ -41,7 +41,15 @@ class ProjectController extends Controller
             {
                 $this->data['picture'][$i] = $projectPictures[$i]->picturePath;
             }
-            print_r($this->data['picture']);
+
+            //On récupère les technos du projet 
+            $projecTechno = \DB::table('project_techno')->where('projectId', $id)->get();
+            for($i=0; $i < count($projecTechno) ; $i++)
+            {
+                $techno = \DB::table('technology')->where('id', $projecTechno[$i]->technoId)->first();
+                $this->data['techno'][$i] = $techno->pathImg;
+            }
+            print_r($this->data['techno']);
             
 
             $this->data['h'][1][1] = 'defaultH';
