@@ -30,8 +30,10 @@ class Controller extends BaseController
     protected function initData()
     {
         $this->data = array(
-            'js' => $this->BASE_URL.'/js/functions.js',
-            'jquery' => $this->BASE_URL.'/js/jquery-1.11.3.js',
+            'js' => array(
+                'function' => $this->BASE_URL.'/js/functions.js',
+                'jquery' => $this->BASE_URL.'/js/jquery-1.11.3.js'
+                ),
             'css' => array(
                 0 => $this->BASE_URL.'/css/project-stylesheet.css',
                 1 => $this->BASE_URL.'/css/stylesheet.css'),

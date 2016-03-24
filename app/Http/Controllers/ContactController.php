@@ -10,6 +10,7 @@ class ContactController extends Controller
     {
         parent::initData();
         $this->data['title'] = $this->getText('contact');
+        $this->data['js']['contact'] = $this->BASE_URL.'/js/contact-form.js';
     }
 
     public function main()
