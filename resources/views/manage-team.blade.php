@@ -10,7 +10,7 @@
 		<?php
 			echo '<table>';	
 			echo '<tr>';
-			echo "<th class='manage_team_th'>Membre</th><th class='manage_team_th_checkbox'>Affichage page d'accueil</th>";
+			echo "<th class='manage_team_th'>Membre</th><th class='manage_team_th_checkbox'>Affichage page d'accueil</th><th class='manage_team_th_checkbox'>Clés Bureau</th>";
 			echo '</tr>';
 			foreach($members as $member)
 			{	
@@ -25,10 +25,23 @@
 				echo '</li>';
 				echo '</a>';
 				echo '</td>';
+
 				echo '<td class="manage_team_td">';
 				if($member['important']==0)
 				{
 					echo '<input id="important'.$member['id'].'" type="checkbox">';
+				}
+				else
+				{
+					echo '<input type="checkbox" checked>';
+				}
+				echo '</td>';
+
+
+				echo '<td class="manage_team_td">';
+				if(true)
+				{
+					echo '<input id="cles'.$member['id'].'" type="checkbox">';
 				}
 				else
 				{
