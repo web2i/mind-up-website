@@ -21,12 +21,10 @@
 				echo '<img src="'.$member['picture']['src'].'">';
 				echo'<div>';
 				echo'<h3>'.$member['firstname'].' '.$member['name'].'</h3>';
-				
 				echo '</div>';
 				echo '</li>';
 				echo '</a>';
 				echo '</td>';
-				//echo '</div>';
 				echo '<td class="manage_team_td">';
 				if($member['important']==0)
 				{
