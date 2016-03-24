@@ -9,10 +9,10 @@ CREATE TABLE IF NOT EXISTS `technology` (
 
 
 INSERT INTO `technology` (`id`, `pathImg`) VALUES
-(1, 'path'),
-(2, 'path'),
-(3, 'path'),
-(4, 'path');
+(1, 'apple.png'),
+(2, 'eclipse.png'),
+(3, 'python.png'),
+(4, 'trello.png');
 
 
 ALTER TABLE `technology`

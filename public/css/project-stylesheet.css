@@ -33,8 +33,8 @@
 }
 
 .tech_image {
-    width: 150px;
-    width: 150px; display: inline-block;text-align: center;
+    /*width: 150px; */
+    display: inline-block;text-align: center;
 }
 
 .project_team, .project_technologies>h3 {
