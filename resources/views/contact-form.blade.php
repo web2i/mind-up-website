@@ -4,15 +4,15 @@
 
 <section id="contact-form">
 	<h3 class="contact_form_title">{{ $h['contact-us'] }}</h3>
-	<div>
-		<input type="button" class="" value="{{ $input['infos'] }}" onclick="formInfos()"> 
-		<input type="button" class="" value="{{ $input['quotation'] }}" onclick="formDevis()"> 
-		<input type="button" class="" value="{{ $input['appointment'] }}" onclick="formRendezVous()">
-		<input type="button" class="" value="{{ $input['other'] }}" onclick="formAutre()">
+	<div class="contact_form_buttons">
+		<input type="button" class="contact_form_button" value="{{ $input['infos'] }}" onclick="formInfos()"> 
+		<input type="button" class="contact_form_button" value="{{ $input['quotation'] }}" onclick="formDevis()"> 
+		<input type="button" class="contact_form_button" value="{{ $input['appointment'] }}" onclick="formRendezVous()">
+		<input type="button" class="contact_form_button" value="{{ $input['other'] }}" onclick="formAutre()">
 	</div>
 	<div id="contact_form_area">
 		<table id="formInfos">
-		<caption>{{ $h['1'] }}</caption>
+		<caption class="formsCaption">{{ $h['1'] }}</caption>
 		<form action="" method="POST">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">Nom: </label></td>
@@ -47,7 +47,7 @@
 
 		
 		<table id="formDevis">
-		<caption>{{ $h['2'] }}</caption>
+		<caption class="formsCaption">{{ $h['2'] }}</caption>
 		<form action="" method="POST">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">Nom: </label></td>
@@ -97,7 +97,7 @@
 		</table>
 
 		<table id="formRdv">
-		<caption>{{ $h['3'] }}</caption>
+		<caption class="formsCaption">{{ $h['3'] }}</caption>
 		<form action="" method="POST">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">Nom: </label></td>
@@ -135,7 +135,7 @@
 		</table>
 
 		<table id="formAutre">
-		<caption>{{ $h['4'] }}</caption>
+		<caption class="formsCaption">{{ $h['4'] }}</caption>
 		<form action="" method="POST">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">Nom: </label></td>

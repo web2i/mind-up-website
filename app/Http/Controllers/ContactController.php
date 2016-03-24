@@ -23,7 +23,7 @@ class ContactController extends Controller
 	$this->data['h']['3'] = 'Demande de rendez-vous'; // TODO
 	$this->data['h']['4'] = 'Autre demande'; // TODO
 
-	$this->data['input'][1] = 'DEFAULT'; // Envoyer ma demande
+	$this->data['input'][1] = 'Envoyer ma demande'; // TODO
 
 
         $this->data['title'] = $this->getText('contact');
