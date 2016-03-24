@@ -4,11 +4,12 @@
 
 <section id="contact-form">
 	<h3 class="contact_form_title"></h3>
-	<form action="" method="POST">
-
-
-
-	</form>
+	<div>
+		<input type="button" value="{{ $input[1] }}"> 
+		<input type="button"> 
+		<input type="button">
+		<input type="button">
+	</div>
 	
 </section>
 

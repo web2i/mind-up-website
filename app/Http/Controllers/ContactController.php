@@ -9,6 +9,10 @@ class ContactController extends Controller
     protected function initData()
     {
         parent::initData();
+	//Buttons
+	$this->data['input'][1] = 'DEFAULT';
+
+
         $this->data['title'] = $this->getText('contact');
     }
 

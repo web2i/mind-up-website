@@ -494,7 +494,13 @@ padding-right: 10%;
 .manage_team_th_checkbox{text-align: left;border: 0;}
 
 /*** CONTACT FORM SECTION ***/
-#contact-form{}
+#contact-form{padding-top:100px;
+    color:#424753;
+    margin-top:0;
+    background-color: white;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;}
 .contact_form_title{}
 
 /*** DATA SECTION ***/
