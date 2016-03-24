@@ -19,6 +19,8 @@ class ContactController extends Controller
 	
 	$this->data['h'][3][1] = 'DEFAULT'; // Nous contacter
 
+	$this->data['input'][1] = 'DEFAULT'; // Envoyer ma demande
+
 
         $this->data['title'] = $this->getText('contact');
         $this->data['js']['contact'] = $this->BASE_URL.'/js/contact-form.js';
