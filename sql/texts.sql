@@ -114,7 +114,13 @@ INSERT INTO `texts` (`edit`, `textId`, `french`) VALUES
 (1, 'developers', 'Développeurs'),
 (1, 'our-team', 'Notre équipe'),
 (1, 'our-team-description', 'Voici notre équipe, toujours prête à vous aider pour vos projets, que ce soit dans le domaine de l\'informatique ou blablabla...'),
-(1, 'edit-texts-title', 'Edition des textes du site')
+(1, 'edit-texts-title', 'Edition des textes du site'),
+
+(1, 'quotation', 'Devis'),
+(1, 'infos', 'Informations'),
+(1, 'appointment', 'Rendez-vous'),
+(1, 'other', 'Autre'),
+(1, 'contact-us', 'Nous contacter')
 
 ;
 

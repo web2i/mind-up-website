@@ -3,12 +3,12 @@
 @section('content')
 
 <section id="contact-form">
-	<h3 class="contact_form_title">{{ $h[3][1] }}</h3>
+	<h3 class="contact_form_title">{{ $h['contact-us'] }}</h3>
 	<div>
-		<input type="button" class="" value="{{ $input[1] }}" onclick="formInfos()"> 
-		<input type="button" class="" value="{{ $input[2] }}" onclick="formDevis()"> 
-		<input type="button" class="" value="{{ $input[3] }}" onclick="formRendezVous()">
-		<input type="button" class="" value="{{ $input[4] }}" onclick="formAutre()">
+		<input type="button" class="" value="{{ $input['infos'] }}" onclick="formInfos()"> 
+		<input type="button" class="" value="{{ $input['quotation'] }}" onclick="formDevis()"> 
+		<input type="button" class="" value="{{ $input['appointment'] }}" onclick="formRendezVous()">
+		<input type="button" class="" value="{{ $input['other'] }}" onclick="formAutre()">
 	</div>
 	<div id="contact_form_area">
 		<table>

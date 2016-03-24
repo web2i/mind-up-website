@@ -10,14 +10,14 @@ class ContactController extends Controller
     {
         parent::initData();
 	//Buttons
-	$this->data['input'][1] = 'DEFAULT'; // Renseignements
-	$this->data['input'][2] = 'DEFAULT'; // Demande de devis
-	$this->data['input'][3] = 'DEFAULT'; //	Demande de rendez-vous
-	$this->data['input'][4] = 'DEFAULT'; // Autre
+	$this->data['input']['infos'] = $this->getText('infos'); 
+	$this->data['input']['quotation'] = $this->getText('quotation'); 
+	$this->data['input']['appointment'] = $this->getText('appointment'); 
+	$this->data['input']['other'] = $this->getText('other'); 
 
 	//Titles
 	
-	$this->data['h'][3][1] = 'DEFAULT'; // Nous contacter
+	$this->data['h']['contact-us'] = $this->getText('contact-us'); // Nous contacter
 
 	$this->data['input'][1] = 'DEFAULT'; // Envoyer ma demande
 
