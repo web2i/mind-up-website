@@ -19,8 +19,12 @@
 
 	<br/><br/><br/>
 	<div class="profil_projects">
-		<a href="{{ $projects[0]['src'] }}"><img class="tech_image" src="{{ $projects[0]['img']['src'] }}" alt="" /></a>
-		<a href="{{ $projects[0]['src'] }}"><img class="tech_image" src="{{ $projects[1]['img']['src'] }}" alt="" /></a>
+	    <?php
+	        foreach($projects as $project)
+	        {
+	            echo '<a href="'.$project['src'].'"><img class="tech_image" src="'.$project['img']['src'].'" alt="" /></a>';
+	        }
+	    ?>
 	
 	</div>
 

@@ -8,15 +8,21 @@ CREATE TABLE IF NOT EXISTS `userProjects` (
   `memberId` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-
-INSERT INTO `userProjects` (`id`, `projectId`, `memberId`) VALUES
-(0, 0, 0),
-(1, 1, 1),
-(2, 2, 1)
-;
-
 ALTER TABLE `userProjects`
  ADD PRIMARY KEY (`id`);
  
 ALTER TABLE `userProjects`
     MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+INSERT INTO `userProjects` (`projectId`, `memberId`) VALUES
+(0, 0),
+(1, 1),
+(2, 1),
+(1, 1),
+(3, 2),
+(1, 2),
+(3, 1),
+(1, 3),
+(2, 3)
+;
+
