@@ -23,7 +23,7 @@ class ProjectsController extends Controller
                 {
                     $this->data['projects'][$i]['title'] = $this->getText("project-".($i+1)."-title");
                     $this->data['projects'][$i]['description'] = $this->getText("project-".($i+1)."-description");
-                    $this->data['projects'][$i]['thumbnail'] = $projects[$i]->thumbnail;
+                    $this->data['projects'][$i]['thumbnail']['src'] = $this->BASE_URL.'ressources/galerie_projets/'.$projects[$i]->thumbnail;
                 }
             }
         }
