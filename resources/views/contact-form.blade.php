@@ -20,7 +20,7 @@
 			<tr><td  class="contact_form_td"><label class="contact_form_label2">Numero de Téléphone:</label></td><td  class="contact_form_td"><input class="contact_form_input" name="phone" value="" /> </td></tr>
 			<tr><td  class="contact_form_td"><label class="contact_form_label2">Message:</label></td><td  class="contact_form_td"><textarea class="contact_form_textArea" name="textContact" ></textarea></td></tr>
 		</form>
-		<table>
+		</table>
 	</div>
 	
 </section>
@@ -28,3 +28,4 @@
 <script type="text/javascript" src="{{ $js['contact'] }}"></script>
 
 @stop
+
