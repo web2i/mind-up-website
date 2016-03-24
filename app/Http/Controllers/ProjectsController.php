@@ -18,6 +18,7 @@ class ProjectsController extends Controller
         $projects = \DB::table('project')->orderBy('project.date','DESC')->get();
         if(isset($projects))
         {
+            //TODO Parcourir les id venant de la DB plutot que de compter
             for ($i=0 ; $i < count($projects) ;$i++) {
                 if($projects[$i]->visible == 1)
                 {

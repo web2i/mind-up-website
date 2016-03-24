@@ -19,6 +19,11 @@ class ProjectController extends Controller
         $project = \DB::table('project')->where('id', $id)->first();
         if(isset($project))
         {
+            //On récupères les donénes du projet
+            $this->data['project']['title'] = $this->getText("project-".($id)."-title");
+            $this->data['project']['description'] = $this->getText("project-".($id)."-description");
+            $this->data['project']['thumbnail']['src'] = $this->BASE_URL.'ressources/galerie_projets/'.$project->thumbnail;    
+
             //On récupère les membres liés au projet
             $userProjects = \DB::table('userProjects')->where('projectId', $id)->get();
             for($i=0; $i < count($userProjects) ; $i++)
@@ -47,7 +52,7 @@ class ProjectController extends Controller
             for($i=0; $i < count($projecTechno) ; $i++)
             {
                 $techno = \DB::table('technology')->where('id', $projecTechno[$i]->technoId)->first();
-                $this->data['techno'][$i]['src'] = $this->BASE_URL.'ressources/images/'.$techno->pathImg;
+                $this->data['techno'][$i]['src'] = $this->BASE_URL.'ressources/techno_icon/'.$techno->pathImg;
             }
             print_r($this->data['techno']);
             
