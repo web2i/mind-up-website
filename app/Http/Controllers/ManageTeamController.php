@@ -34,8 +34,10 @@ class ManageTeamController extends Controller
             $m['src'] = $this->getUrl("index.php/edit-profil/".$user->getId());
             $m['department'] = $user->getDepartement();
             $m['important'] = $user->getImportant();
+            $m['id'] = $user->getId();
             array_push($this->data['members'], $m);
         }
+        //echo '<pre>'; print_r($this->data['members']); echo '</pre>';
     }
 
     public function main()

@@ -4,6 +4,8 @@
 
 <section id="manage-team">
 	<h3 class="manage_team_title">{{ $h[3][1] }}</h3>
+	
+	<form action="" method="post"> <!-- Action a definir -->
 	<ul class="manage_team_list">
 		<?php
 			echo '<table>';	
@@ -19,16 +21,14 @@
 				echo '<img src="'.$member['picture']['src'].'">';
 				echo'<div>';
 				echo'<h3>'.$member['firstname'].' '.$member['name'].'</h3>';
-				
 				echo '</div>';
 				echo '</li>';
 				echo '</a>';
 				echo '</td>';
-				//echo '</div>';
 				echo '<td class="manage_team_td">';
 				if($member['important']==0)
 				{
-					echo '<input type="checkbox">';
+					echo '<input id="important'.$member['id'].'" type="checkbox">';
 				}
 				else
 				{
@@ -39,8 +39,9 @@
 			}
 			echo '</table>';	
 		?>
-	<input type="button" id="manageTeamButton" value="{{ $input[1]}}">
+	<input type="button" id="manageTeamButton" type="submit" value="{{ $input[1]}}">
 	</ul>
+	</form>
 </section>
 
 @stop

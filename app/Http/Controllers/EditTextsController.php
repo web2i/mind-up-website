@@ -6,15 +6,14 @@ use App\Http\Controllers\Controller;
 use DB;
 use Session;
 
-class DataController extends Controller
+class EditTextsController extends Controller
 {
     protected function initData()
     {
         parent::initData();
-        $this->data['title'] = $this->getText('data-title');
+        $this->data['title'] = $this->getText('edit-texts-title');
         $texts = DB::table('texts')->get();
         $this->data['texts'] = json_decode(json_encode($texts), True);
-        
     }
 
     public function main()
@@ -27,7 +26,7 @@ class DataController extends Controller
         }
         
         $this->initData();
-        return view('data', $this->data);
+        return view('edit-texts', $this->data);
     }
 }
 

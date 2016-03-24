@@ -27,10 +27,10 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/private-home', 'PrivateHomeController@main');
     
     Route::get('/data', 'DataController@main');
-    Route::get('/edit-texts', 'DataController@main');
+    Route::get('/edit-texts', 'EditTextsController@main');
     
     Route::get('/admin', 'AdminController@main');
-    Route::get('/manage-members', 'AdminController@main');
+    Route::get('/manage-jobs', 'ManageJobsController@main');
       
     Route::get('/profil/{id}', 'ProfilController@main');
     

@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use DB;
 use Schema;
 
-class AdminController extends Controller
+class ManageJobsController extends Controller
 {
     protected function initData()
     {
@@ -36,7 +36,7 @@ class AdminController extends Controller
         }
         
         $this->initData();
-        return view('admin', $this->data);
+        return view('manage-jobs', $this->data);
     }
 }
 
