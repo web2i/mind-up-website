@@ -18,6 +18,10 @@ class ContactController extends Controller
 	//Titles
 	
 	$this->data['h']['contact-us'] = $this->getText('contact-us'); // Nous contacter
+	$this->data['h']['1'] = 'Demande de renseignements'; // TODO
+	$this->data['h']['2'] = 'Demande de devis'; // TODO
+	$this->data['h']['3'] = 'Demande de rendez-vous'; // TODO
+	$this->data['h']['4'] = 'Autre demande'; // TODO
 
 	$this->data['input'][1] = 'DEFAULT'; // Envoyer ma demande
 

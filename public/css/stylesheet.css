@@ -545,6 +545,11 @@ padding-right: 10%;
 .contact_form_label3 {margin-left: 20px;font-size: 1.0em;}
 .contact_form_td{text-align: left;border: 0;}
 
+#formInfos{}
+#formDevis{display:none;}
+#formRdv{display:none;}
+#formAutre{display:none;}
+
 /*** DATA SECTION ***/
 
 #data {padding-top:100px;
