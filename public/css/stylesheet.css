@@ -563,6 +563,93 @@ padding-right: 10%;
     color: white;
 }
 
+/*** FOOTER ***/
+
+#footer {position: relative;float: bottom; background-color: #312f38;width: 100%;margin-top: 20px;}
+#footer_container h5 {display:inline-block;color: #f0f0f0;}
+#footer_container {padding-bottom: 40px;width: 94%;padding-top: 40px;margin-left: 6%;}
+
+.footer_input {
+    text-decoration: none;color: black;
+    margin: 20px;
+    padding: 8px 15px;
+    background-color: #6c7492;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5),
+    0 2px 2px rgba(0,0,0,0.3),
+    0 0 4px 1px rgba(0,0,0,0.2);
+    transition: all .4s;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.footer_input:hover {background: #7e8fd0;color: white;}
+
+
+/*** APROPOS POPUP ***/
+
+#apropos_popup {
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    left:30%;
+    top: 100px;
+    padding: 40px;
+    text-align: center;
+    text-align: justify;border-radius: 8px;
+    border: 1px solid #c94e50;
+    position: fixed;
+    display: none;
+}
+
+
+#apropos_img {
+    width: 200px;
+    height: 110px;
+    float: right;
+    display: block;
+}
+
+#apropos_popup h3{
+    width: 60%;
+    border-bottom: 1px solid grey;
+    position: relative;
+}
+
+#apropos_popup table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    
+}
+#apropos_popup table td,th {
+    border: none;text-align: left;
+}
+
+#apropos_popup table td {
+    border-left:1px solid grey;padding-left: 5px;
+}
+
+#apropos_input { 
+    background-color: white;
+    color: #c94e50;
+    width: 80px;
+    height: 50px;   
+    font-size: 1.5em;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid #c94e50;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 100px;
+    transition: 500ms;
+}
+
+#apropos_input:hover { 
+    background-color: #c94e50;
+    color: white;
+}
+
+#apropos_equipe {
+    margin-bottom: 30px;
+}
 
 
 

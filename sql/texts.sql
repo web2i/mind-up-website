@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `texts`;
 CREATE TABLE IF NOT EXISTS `texts` (
   `textId` varchar(255) NOT NULL,
-  `public` tinyint(1) NOT NULL,
+  `edit` tinyint(1) NOT NULL,
   `french` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `texts` (
 -- Dumping data for table `texts`
 --
 
-INSERT INTO `texts` (`public`, `textId`, `french`) VALUES
+INSERT INTO `texts` (`edit`, `textId`, `french`) VALUES
 (1, 'PAGE-TYPE-ID', 'DEFAULT'),
 (1, 'website', 'Mind Up'),
 (1, 'copyright', 'Copyright 2015 mind-up'),
