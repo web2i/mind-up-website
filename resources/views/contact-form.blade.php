@@ -71,19 +71,19 @@
 			</tr>
 			<tr>
 				<td  class="contact_form_td"><label class="contact_form_label2">Budget aloué:</label></td>
-				<td  class="contact_form_td"><textarea class="contact_form_textArea" name="BudgetDevis" ></textarea></td>
+				<td  class="contact_form_td"><input class="contact_form_input" name="BudgetDevis" /></td>
 			</tr>
 			<tr>
 				<td  class="contact_form_td"><label class="contact_form_label2">Durée de développement:</label></td>
-				<td  class="contact_form_td"><textarea class="contact_form_textArea" name="DureeDeveloppementDevis" ></textarea></td>
+				<td  class="contact_form_td"><input class="contact_form_input" name="DureeDeveloppementDevis" /></td>
 			</tr>
 			<tr>
 				<td  class="contact_form_td"><label class="contact_form_label2">Date limite devis:</label></td>
-				<td  class="contact_form_td"><textarea class="contact_form_textArea" name="DateLimiteDevis" ></textarea></td>
+				<td  class="contact_form_td"><input class="contact_form_input" name="DateLimiteDevis" /></td>
 			</tr>
 			<tr>
 				<td  class="contact_form_td"><label class="contact_form_label2">Nom du projet:</label></td>
-				<td  class="contact_form_td"><textarea class="contact_form_textArea" name="ProjectNameDevis" ></textarea></td>
+				<td  class="contact_form_td"><input class="contact_form_input" name="ProjectNameDevis" /></td>
 			</tr>
 			<tr>
 				<td  class="contact_form_td"><label class="contact_form_label2">Description:</label></td>
