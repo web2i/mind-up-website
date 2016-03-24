@@ -27,7 +27,7 @@ class ProjectController extends Controller
                 $this->data['members'][$i]['name'] = $member->name;
                 $this->data['members'][$i]['firstname'] = $member->firstname;
                 $this->data['members'][$i]['jobId'] = $member->jobId;
-                $this->data['members'][$i]['imageName'] = $member->imageName;
+                $this->data['members'][$i]['imageName']['src'] = $this->BASE_URL.'ressources/images/'.$member->imageName;
             }
             //On récupère les infos du client lié au projet
             $client = \DB::table('client')->where('id', $project->clientId)->first();
@@ -39,7 +39,7 @@ class ProjectController extends Controller
             $projectPictures = \DB::table('project_picture')->where('projectId', $id)->get();
             for($i=0; $i < count($projectPictures) ; $i++)
             {
-                $this->data['picture'][$i] = $projectPictures[$i]->picturePath;
+                $this->data['picture'][$i]['src'] = $this->BASE_URL.'ressources/galerie_projets/'.$projectPictures[$i]->picturePath;
             }
 
             //On récupère les technos du projet 
@@ -47,7 +47,7 @@ class ProjectController extends Controller
             for($i=0; $i < count($projecTechno) ; $i++)
             {
                 $techno = \DB::table('technology')->where('id', $projecTechno[$i]->technoId)->first();
-                $this->data['techno'][$i] = $techno->pathImg;
+                $this->data['techno'][$i]['src'] = $this->BASE_URL.'ressources/images/'.$techno->pathImg;
             }
             print_r($this->data['techno']);
             

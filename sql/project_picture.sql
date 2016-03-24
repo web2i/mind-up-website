@@ -38,14 +38,9 @@ CREATE TABLE IF NOT EXISTS `project_picture` (
 --
 
 INSERT INTO `project_picture` (`id`, `projectId`, `picturePath`, `id_img`) VALUES
-(1, 1, 'path', 'project-image-1'),
-(2, 1, 'path', 'project-image-2'),
-(3, 1, 'path', 'project-image-3'),
-(4, 1, 'path', 'project-tech-1'),
-(5, 1, 'path', 'project-tech-2'),
-(6, 1, 'path', 'project-tech-3'),
-(7, 1, 'path', 'profil-image-1'),
-(8, 1, 'path', 'profil-image-2');
+(1, 1, 'alstom_logo.jpeg', 'project-image-1'),
+(2, 1, 'bouyguesContrusction_logo.jpeg', 'project-image-2'),
+(3, 1, 'force_a_logo.gif', 'project-image-3');
 
 --
 -- Index pour les tables exportées
