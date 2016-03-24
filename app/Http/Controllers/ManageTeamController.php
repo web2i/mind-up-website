@@ -35,6 +35,7 @@ class ManageTeamController extends Controller
             $m['department'] = $user->getDepartement();
             $m['important'] = $user->getImportant();
             $m['id'] = $user->getId();
+            $m['key'] = $user->hasKey();
             array_push($this->data['members'], $m);
         }
         //echo '<pre>'; print_r($this->data['members']); echo '</pre>';

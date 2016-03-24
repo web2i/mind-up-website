@@ -39,7 +39,7 @@
 
 
 				echo '<td class="manage_team_td">';
-				if(true)
+				if($member['key']==0)
 				{
 					echo '<input id="cles'.$member['id'].'" type="checkbox">';
 				}

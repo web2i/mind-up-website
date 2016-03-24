@@ -49,6 +49,7 @@ class User
         $instance->mobile = DB::table('members')->where('id', $id)->value('mobile');
         $instance->pathToImage = DB::table('members')->where('id', $id)->value('imageName');
         $instance->important = DB::table('members')->where('id', $id)->value('important');
+        $instance->key = DB::table('members')->where('id', $id)->value('key');
         $instance->job = new Job($instance->jobId);
         return $instance;
     } 
@@ -84,6 +85,9 @@ class User
     }
     public function getDepartement() {
         return $this->job->getDepartement();
+    }
+    public function hasKey() {
+        return $this->key;
     }
     public function getPathToImage() {
         $a = "default-profil.png";
