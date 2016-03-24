@@ -18,6 +18,7 @@
 				    <li><a href="{{ $a['home']['url']}}">{{ $a['home']['text'] }}</a></li>
 				    <li><a href="{{ $a['projects']['url']}}">{{ $a['projects']['text'] }}</a></li>
 				    <li><a href="{{ $a['team']['url']}}">{{ $a['team']['text'] }}</a></li>
+				    <li><a href="{{ $a['contact']['url']}}">{{ $a['contact']['text'] }}</a></li>
 				    
 				    <?php
 				        if($user['logged'])

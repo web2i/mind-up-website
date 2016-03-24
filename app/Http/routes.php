@@ -37,6 +37,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/manage-team', 'ManageTeamController@main');
     Route::get('/edit-profil/{id}', 'EditProfilController@main');
     
+    Route::get('/contact', 'ContactController@main');
+    
     //Route::get('auth/login', 'Auth\AuthController@getLogin');
     
     //Route::get('auth/login', 'Auth\AuthController@getLogin');

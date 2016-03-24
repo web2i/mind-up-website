@@ -102,6 +102,9 @@ class Controller extends BaseController
                 'private-home' => array(
                     'text' => $this->getText('a-private-home'),
                     'url' => $this->BASE_URL.'index.php/private-home'),
+                'contact' => array(
+                    'text' => $this->getText('a-contact'),
+                    'url' => $this->BASE_URL.'index.php/contact'),
                 'projects' => array(
                     'text' => $this->getText('a-projects'),
                     'url' => $this->getUrl('index.php/projects'))));

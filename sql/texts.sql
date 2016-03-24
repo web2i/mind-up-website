@@ -60,6 +60,8 @@ INSERT INTO `texts` (`public`, `textId`, `french`) VALUES
 (1, 'a-project', 'project'),
 (1, 'a-private-home', 'Back Office'),
 
+(1, 'contact', 'Contact'),
+(1, 'a-contact', 'Contact'),
 (1, 'a-manage-team', 'Manage Team'),
 (1, 'manage-team', 'Gestion des membres'),
 
