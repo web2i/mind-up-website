@@ -33,7 +33,7 @@
 				}
 				else
 				{
-					echo '<input type="checkbox" checked>'; // là il manque l'id
+					echo '<input id="important'.$member['id'].'" type="checkbox" checked>'; 
 				}
 				echo '</td>';
 
