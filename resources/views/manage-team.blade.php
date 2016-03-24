@@ -33,7 +33,7 @@
 				}
 				else
 				{
-					echo '<input type="checkbox" checked>';
+					echo '<input type="checkbox" checked>'; // là il manque l'id
 				}
 				echo '</td>';
 

@@ -6,8 +6,8 @@
 	    <title>{{ $website }} - {{ $title }}</title>
 	    <link rel="stylesheet" type="text/css" href="{{ $css[0] }}" media="all"/>
 	    <link rel="stylesheet" type="text/css" href="{{ $css[1] }}" media="all"/>
-	    <script type="text/javascript" src="{{ $jquery }}"></script>
-	    <script type="text/javascript" src="{{ $js }}"></script>
+	    <script type="text/javascript" src="{{ $js['jquery'] }}"></script>
+	    <script type="text/javascript" src="{{ $js['function'] }}"></script>
     </head>
 
     <header id="header">
