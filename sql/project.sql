@@ -39,9 +39,9 @@ CREATE TABLE IF NOT EXISTS `project` (
 --
 
 INSERT INTO `project` (`id`, `visible`, `date`, `thumbnail`,`clientId` ) VALUES
-(1, 1, '2016-03-22', '', 1),
-(2, 1, '2016-03-22', 'project.jpg', 1),
-(3, 1, '2016-03-22', '', 1);
+(1, 1, '2016-03-22', 'alstom_logo.jpeg', 1),
+(2, 1, '2016-03-22', 'bouyguesContrusction_logo.jpeg', 2),
+(3, 1, '2016-03-22', 'force_a_logo.gif', 3);
 
 --
 -- Index pour les tables exportées

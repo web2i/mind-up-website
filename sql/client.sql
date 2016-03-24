@@ -38,9 +38,9 @@ CREATE TABLE IF NOT EXISTS `client` (
 --
 
 INSERT INTO `client` (`id`, `compagnyName`, `comment`, `compagnyLogo`) VALUES
-(1, 'Google', 'Cest de la merde', 'compagnyLogo'),
-(2, 'Apple', 'Carrement', 'compagnyLogo');
-
+(1, 'Alstom', 'Oh lala Mind-Up ça déchire', 'alstom_logo.jpeg'),
+(2, 'Bouygues', 'Le chargé de projet était vraiment nul', 'bouyguesContrusction_logo.jpeg'),
+(3, 'Force-A', 'Equipe parfaite !', 'force_a_logo.gif');
 --
 -- Index pour les tables exportées
 --

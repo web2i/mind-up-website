@@ -1,32 +1,39 @@
-﻿<?php 
-    if(isset($projects)) { echo '<pre>'; print_r($projects); echo '</pre>';}
-    ?>
+﻿	<?php 
+	//if(isset($projects)) { echo '<pre>'; print_r($projects); echo '</pre>';}
+	?>
 
-@extends('layouts.master')
+	@extends('layouts.master')
 
-@section('content')
+	@section('content')
 
 
-<section id="content">
-	<h2 class="content_title">L'ensemble de nos projets.</h2>
+	<section id="content">
+		<h2 class="content_title">L'ensemble de nos projets.</h2>
 
-	<!-- Affiche les infos de chaque projet -->
-    
+		<!-- Affiche les infos de chaque projet -->
 
-	<!-- Partie provisoire pour générer une galerie "test" -->
 
-	<?php for($i=0;$i<10;$i++): ?>
-		<a class="element" style="<?php if($i%3 == 1){ echo 'width=60%;'; }else if($i%3 == 0){ echo 'width: 40%;';} else{ echo 'width=50%;'; }?>" href="#">
-			<span class="title">Titre</span>
-			<span class="desc">Ici une petite description <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>
-			<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>	
-			<p>Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>
-		</span>
-			<span class="bg"></span>
-			<img  src="ressources/galerie_projets/projet<?php echo $i%3; ?>.jpg" alt="" />
-		</a>
-	<?php endfor; ?>
-	
+		<!-- Partie provisoire pour générer une galerie "test" -->
+		<?php 
+		for($i=0;$i<count($projects);$i++) {
+			echo '<a class="element" style="';
+			if($i%3 == 1)
+			{ 
+				echo 'width=60%;'; 
+			} else if ($i%3 == 0)
+			{ 
+				echo 'width: 40%;';
+			} else{ 
+				echo 'width=50%;'; 
+			}
+			echo '"href="project/'.($i+1).'">';
+			echo '<span class="title">'.$projects[$i]['title'].'</span>';
+			echo '<span class="desc">'.$projects[$i]['description'].'</span>';
+			echo '<span class="bg"></span>';
+			echo '<img  src='.$projects[$i]['thumbnail']['src'].' alt="" />';
+			echo '</a>';
+		}
+		?>
 </section>
 
 @stop
