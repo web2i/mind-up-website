@@ -35,7 +35,8 @@
             echo'
                 <tr>
                     <td>'.$text['textId'].'</td>
-                    <td><textarea>'.$text['french'].'</textarea></td>
+                    <td><textarea id="'.$text['textId'].'">'.$text['french'].'</textarea></td>
+                    <td><button id="'.$text['textId'].'">'."Go".'</input></td>
                 </tr>
             ';
         }

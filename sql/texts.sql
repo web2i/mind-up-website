@@ -50,7 +50,7 @@ INSERT INTO `texts` (`public`, `textId`, `french`) VALUES
 (1, 'a-team', 'Team'),
 
 (1, 'a-inscription', 'inscription'),
-(1, 'a-manage-members', 'manage-members'),
+(1, 'a-manage-jobs', 'Manage jobs'),
 (1, 'a-profil', 'profil'),
 (1, 'a-edit-profil', 'edit-profil'),
 (1, 'a-edit-figures', 'edit-figures'),
@@ -111,7 +111,8 @@ INSERT INTO `texts` (`public`, `textId`, `french`) VALUES
 (1, 'finances', 'Trésorerie'),
 (1, 'developers', 'Développeurs'),
 (1, 'our-team', 'Notre équipe'),
-(1, 'our-team-description', 'Voici notre équipe, toujours prête à vous aider pour vos projets, que ce soit dans le domaine de l\'informatique ou blablabla...')
+(1, 'our-team-description', 'Voici notre équipe, toujours prête à vous aider pour vos projets, que ce soit dans le domaine de l\'informatique ou blablabla...'),
+(1, 'edit-texts-title', 'Edition des textes du site')
 
 ;
 

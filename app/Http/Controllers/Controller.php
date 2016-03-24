@@ -58,9 +58,9 @@ class Controller extends BaseController
                 'inscription' => array(
                     'text' => $this->getText('a-inscription'),
                     'url' => $this->BASE_URL.'index.php/inscription'),
-                'manage-members' => array(
-                    'text' => $this->getText('a-manage-members'),
-                    'url' => $this->BASE_URL.'index.php/manage-members'),
+                'manage-jobs' => array(
+                    'text' => $this->getText('a-manage-jobs'),
+                    'url' => $this->BASE_URL.'index.php/manage-jobs'),
             
             
             
