@@ -144,3 +144,16 @@ $(function(){
 	});
 });
 
+/*** APROPOS SECTION ***/
+
+$(function(){
+	$("#apropos_input").click(function(){
+		$("#apropos_popup").stop().animate({opacity : "0", top: '0px' }, 300);
+	});
+});
+$(function(){
+	$("#apropos_btn").click(function(){
+		$("#apropos_popup").stop().animate({opacity : "1", top: '100px' }, 300);
+	});
+});
+
