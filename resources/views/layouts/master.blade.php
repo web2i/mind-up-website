@@ -8,6 +8,10 @@
 	    <link rel="stylesheet" type="text/css" href="{{ $css[1] }}" media="all"/>
 	    <script type="text/javascript" src="{{ $js['jquery'] }}"></script>
 	    <script type="text/javascript" src="{{ $js['function'] }}"></script>
+	    <!-- TODO -->
+	    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+        <!-- TODO -->
     </head>
 
     <header id="header">

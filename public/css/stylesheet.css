@@ -739,9 +739,22 @@ padding-right: 10%;
 
 
 
+#menu-2  li {
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: middle;
+}
 
-
-
+#menu-2 a {
+    color: #616A77;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    transition-property: all;
+    padding-bottom: 10px;
+}
 
 
 
