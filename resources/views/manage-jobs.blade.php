@@ -28,7 +28,16 @@
         foreach($job as $aa){
 	    if($countTd >= 3)
 	    {
-            	echo '<td class="jobsTableTd">' . $aa . '</td>';
+            	echo '<td class="jobsTableTd">';
+		if($aa == 1)
+		{
+			echo '<input id="box'.$aa.'" type="checkbox" checked>';
+		}
+		else
+		{
+			echo '<input id="box'.$aa.'" type="checkbox">';
+		}
+		echo '</td>';
 	    }
 	    else
 	    {
