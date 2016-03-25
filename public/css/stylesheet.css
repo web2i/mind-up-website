@@ -436,7 +436,7 @@ html, body {margin : 0px;padding:0;background-color: #eaeaea;font-family: sans-s
 }
 
 /*** ADMIN SECTION ***/
-
+/**
 .admin {
     border: 1px solid black;
     border-spacing: 0px;
@@ -446,18 +446,25 @@ html, body {margin : 0px;padding:0;background-color: #eaeaea;font-family: sans-s
 .admin2 {
     margin-top: 50px;
     border-collapse: collapse;
-}
-
+}*/
+/**
 td {
     border: 1px solid black;
-    text-align: center; /* center checkbox horizontally */
-    vertical-align: middle; /* center checkbox vertically */
-    width:10%; 
+    text-align: center; 
+    vertical-align: middle;
+  width:10%; 
 }
 th {
     border: 1px solid black;
-}
+}*/
 
+.jobsTableTh{
+	background-color:#B0AAAA;
+}
+#jobsTable{width:80%;}
+.jobsTableTd{width:auto;text-align:center;border-right:2px #B0AAAA dashed;}
+.jobsTableTd2{border-right:2px #B0AAAA dashed;}
+.jobsTableTr{width:auto;}
 .add_user {
     position: absolute;
     top: 520px;
@@ -465,7 +472,15 @@ th {
     width: 40px;
     height: 40px;
 }
-
+.contTable{
+	width: 100%;
+	overflow: auto;
+	border: 1px rgba(0, 0, 0, 0.17) solid;
+	border-radius: 4px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+	background-color: #F8F8F8;
+	padding: 5px;
+}
 
 #section_admin{
 width: 80%;
@@ -676,7 +691,11 @@ padding-right: 10%;
     border-collapse: collapse;
     
 }
-#apropos_popup table td,th {
+#apropos_popup table td{
+    border: none;text-align: left;
+}
+
+#apropos_popup table th{
     border: none;text-align: left;
 }
 
