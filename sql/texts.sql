@@ -128,6 +128,21 @@ INSERT INTO `texts` (`edit`, `textId`, `french`) VALUES
 (0, 'contact-ask-other', 'Autre demande'),
 (0, 'contact-button', 'Envoyer ma demande'),
 
+(0, 'firstname', 'Prénom : '),
+(0, 'name', 'Nom : '),
+(0, 'companyname', 'Nom de l\'entreprise : '),
+(0, 'email', 'Adresse email :'),
+(0, 'phone', 'Téléphone : '),
+(0, 'message', 'Message : '),
+(0, 'budget', 'Budget alloué : '),
+(0, 'devTime', 'Temps de développement : '),
+(0, 'quotation-deadline', 'Date limite du devis : '),
+(0, 'projectName', 'Nom du projet : '),
+(0, 'description', 'Description : '),
+(0, 'appointment-date', 'Dates de rendez-vous : '),
+
+
+
 (0, 'default', 'default'),
 (0, '', 'nope')
 ;

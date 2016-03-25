@@ -78,7 +78,7 @@
 				<td  class="contact_form_td"><input class="contact_form_input" name="DureeDeveloppementDevis" /></td>
 			</tr>
 			<tr>
-				<td  class="contact_form_td"><label class="contact_form_label2">{{ $label['deadline'] }}</label></td>
+				<td  class="contact_form_td"><label class="contact_form_label2">{{ $label['quotation-deadline'] }}</label></td>
 				<td  class="contact_form_td"><input class="contact_form_input" name="DateLimiteDevis" /></td>
 			</tr>
 			<tr>
@@ -124,7 +124,7 @@
 				<td  class="contact_form_td"><textarea class="contact_form_textArea" name="textContactRdv" ></textarea></td>
 			</tr>
 			<tr>
-				<td  class="contact_form_td"><label class="contact_form_label2">{{ $label['appointment'] }}</label></td>
+				<td  class="contact_form_td"><label class="contact_form_label2">{{ $label['appointment-date'] }}</label></td>
 				<td  class="contact_form_td"><!-- calendrier--></td>
 			</tr>
 			<tr>
