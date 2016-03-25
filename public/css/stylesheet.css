@@ -561,7 +561,15 @@ padding-right: 10%;
 .contact_form_label {margin: 20px;font-size: 1.0em;}
 .contact_form_label2 {margin: 20px;font-size: 1.2em;}
 .contact_form_label3 {margin-left: 20px;font-size: 1.0em;}
-.contact_form_td{text-align: left;border: 0;}
+.contact_form_td{border: 0;
+    text-align: center; 
+    vertical-align: middle;
+  width:10%; }
+.contact_form_td2{border: 0;
+    text-align: left; 
+    vertical-align: middle;
+  width:10%; }
+
 
 
 #formInfos{}
