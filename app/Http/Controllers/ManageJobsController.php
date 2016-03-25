@@ -13,7 +13,7 @@ class ManageJobsController extends Controller
         parent::initData();
         $this->data['title'] = $this->getText('admin');
         
-        $jobs = DB::table('jobs')->get();
+        $jobs = DB::table('jobs')->orderBy('id', 'asc')->get();
         $jobs = json_decode(json_encode($jobs), True);
         foreach($jobs as $key => $job) {
             $jobs[$key]['textId'] = $this->getText($jobs[$key]['textId']);
