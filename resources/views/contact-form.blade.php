@@ -14,6 +14,7 @@
 		<table id="formInfos">
 		<caption class="formsCaption">{{ $h['1'] }}</caption>
 		<form action="" method="POST">
+			<input type="hidden" name="object" value="informaton">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">{{ $label['name'] }} </label></td>
 				<td  class="contact_form_td"><input class="contact_form_input" name="nameInfos" value="" /> </td>
@@ -42,6 +43,9 @@
 				<td  class="contact_form_td"></td>
 				<td  class="contact_form_td"><input type="submit" value="{{ $input[1]}}"/></td>
 			</tr>
+			
+			<input type="hidden" name="_token" value="{{ csrf_token() }}">
+			
 		</form>
 		</table>
 
@@ -49,6 +53,7 @@
 		<table id="formDevis">
 		<caption class="formsCaption">{{ $h['2'] }}</caption>
 		<form action="" method="POST">
+			<input type="hidden" name="object" value="budget">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">{{ $label['name'] }}  </label></td>
 				<td  class="contact_form_td"><input class="contact_form_input" name="nameDevis" value="" /> </td>
@@ -93,12 +98,16 @@
 				<td  class="contact_form_td"></td>
 				<td  class="contact_form_td"><input type="submit" value="{{ $input[1]}}"/></td>
 			</tr>
+			
+			<input type="hidden" name="_token" value="{{ csrf_token() }}">
+			
 		</form>
 		</table>
 
 		<table id="formRdv">
 		<caption class="formsCaption">{{ $h['3'] }}</caption>
 		<form action="" method="POST">
+			<input type="hidden" name="object" value="appointment">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">{{ $label['name'] }}  </label></td>
 				<td  class="contact_form_td"><input class="contact_form_input" name="nameRdv" value="" /> </td>
@@ -131,12 +140,16 @@
 				<td  class="contact_form_td"></td>
 				<td  class="contact_form_td"><input type="submit" value="{{ $input[1]}}"/></td>
 			</tr>
+			
+			<input type="hidden" name="_token" value="{{ csrf_token() }}">
+			
 		</form>
 		</table>
 
 		<table id="formAutre">
 		<caption class="formsCaption">{{ $h['4'] }}</caption>
 		<form action="" method="POST">
+			<input type="hidden" name="object" value="other">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">{{ $label['name'] }}</label></td>
 				<td  class="contact_form_td"><input class="contact_form_input" name="nameAutre" value="" /> </td>
@@ -165,6 +178,9 @@
 				<td  class="contact_form_td"></td>
 				<td  class="contact_form_td"><input type="submit" value="{{ $input[1]}}"/></td>
 			</tr>
+			
+			<input type="hidden" name="_token" value="{{ csrf_token() }}">
+			
 		</form>
 		</table>
 	</div>
