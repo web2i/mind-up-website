@@ -38,6 +38,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/edit-profil/{id}', 'EditProfilController@main');
     
     Route::get('/contact', 'ContactController@main');
+    Route::post('/contact', 'ContactPostController@main');
     
     //Route::get('auth/login', 'Auth\AuthController@getLogin');
     

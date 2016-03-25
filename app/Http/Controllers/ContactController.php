@@ -14,7 +14,7 @@ class ContactController extends Controller
 	    $this->data['input']['quotation'] = $this->getText('quotation'); 
 	    $this->data['input']['appointment'] = $this->getText('appointment'); 
 	    $this->data['input']['other'] = $this->getText('other');
-	    $this->data['input'][1] = $this->getText('contact-ask-other');
+	    $this->data['input'][1] = $this->getText('contact-button');
 	    //Labels
 	    $this->data['label']['name']= $this->getText('name');
 	    $this->data['label']['firstname']= $this->getText('firstname');
