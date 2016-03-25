@@ -34,7 +34,8 @@ class LoginController extends Controller
         if (password_verify ($password , $hash ))
         {
             Session::put('user', User::createFromEmailHash($email , $hash));
-            return redirect('private-home');
+            //return redirect('private-home');
+            return redirect('home');
         }
     }
 }

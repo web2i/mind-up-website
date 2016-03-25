@@ -8,6 +8,10 @@
 	    <link rel="stylesheet" type="text/css" href="{{ $css[1] }}" media="all"/>
 	    <script type="text/javascript" src="{{ $js['jquery'] }}"></script>
 	    <script type="text/javascript" src="{{ $js['function'] }}"></script>
+	    <!-- TODO -->
+	    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+        <!-- TODO -->
     </head>
 
     <header id="header">
@@ -16,8 +20,8 @@
 			    <ul>
 				    <li><img id="header_logo" src="{{ $img['logo']['src'] }}"/></li>
 				    <li><a href="{{ $a['home']['url']}}">{{ $a['home']['text'] }}</a></li>
-				    <li><a href="{{ $a['projects']['url']}}">{{ $a['projects']['text'] }}</a></li>
 				    <li><a href="{{ $a['team']['url']}}">{{ $a['team']['text'] }}</a></li>
+				    <li><a href="{{ $a['projects']['url']}}">{{ $a['projects']['text'] }}</a></li>
 				    <li><a href="{{ $a['contact']['url']}}">{{ $a['contact']['text'] }}</a></li>
 				    
 				    <?php
@@ -29,20 +33,20 @@
 				        }
 				    ?>
 				    
-				    <!--To Remove -->
+				    <!--To Remove --
 				    </br>
-				    <li><a href="{{ $a['team']['url']}}">{{ $a['team']['text'] }}</a></li>
-				    <li><a href="{{ $a['project']['url']}}">{{ $a['project']['text'] }}</a></li>
 				    <li><a href="{{ $a['profil']['url']}}">{{ $a['profil']['text'] }}</a></li>
+				    <li><a href="{{ $a['project']['url']}}">{{ $a['project']['text'] }}</a></li>
 				    <li><a href="{{ $a['manage-team']['url']}}">{{ $a['manage-team']['text'] }}</a></li>
-				    <li><a href="{{ $a['login']['url']}}">{{ $a['login']['text'] }}</a></li>
-				    <li><a href="{{ $a['logout']['url']}}">{{ $a['logout']['text'] }}</a></li>
-				    <li><a href="{{ $a['inscription']['url']}}">{{ $a['inscription']['text'] }}</a></li>
 				    <li><a href="{{ $a['manage-jobs']['url']}}">{{ $a['manage-jobs']['text'] }}</a></li>
+				    <li><a href="{{ $a['inscription']['url']}}">{{ $a['inscription']['text'] }}</a></li>
 				    <li><a href="{{ $a['edit-profil']['url']}}">{{ $a['edit-profil']['text'] }}</a></li>
 				    <li><a href="{{ $a['edit-texts']['url']}}">{{ $a['edit-texts']['text'] }}</a></li>
-				    <li><a href="{{ $a['edit-figures']['url']}}">{{ $a['edit-figures']['text'] }}</a></li>
-				    <li><a href="{{ $a['edit-projects']['url']}}">{{ $a['edit-projects']['text'] }}</a></li>
+				    <!--<li><a href="{{ $a['edit-figures']['url']}}">{{ $a['edit-figures']['text'] }}</a></li>
+				    <li><a href="{{ $a['edit-projects']['url']}}">{{ $a['edit-projects']['text'] }}</a></li>-->
+				    <!--
+				    <li><a href="{{ $a['login']['url']}}">{{ $a['login']['text'] }}</a></li>
+				    <li><a href="{{ $a['logout']['url']}}">{{ $a['logout']['text'] }}</a></li>
 				    <!-- -->
 				    
 				    

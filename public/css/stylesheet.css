@@ -460,6 +460,8 @@ th {
 
 .jobsTableTh{
 	background-color:#B0AAAA;
+	white-space: nowrap;
+	padding: 4px 8px;
 }
 #jobsTable{width:80%;}
 .jobsTableTd{width:auto;text-align:center;border-right:2px #B0AAAA dashed;}
@@ -737,9 +739,22 @@ padding-right: 10%;
 
 
 
+#menu-2  li {
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: middle;
+}
 
-
-
+#menu-2 a {
+    color: #616A77;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    transition-property: all;
+    padding-bottom: 10px;
+}
 
 
 

@@ -2,9 +2,23 @@
 
 @section('content')
 
-
+<!--To Remove  -->
+				   
+				    <!-- -->
 
 <section id="private_navig">
+<nav id="menu-2">
+				    <li><a href="{{ $a['profil']['url']}}">{{ $a['profil']['text'] }}</a></li>
+				    <li><a href="{{ $a['project']['url']}}">{{ $a['project']['text'] }}</a></li>
+				    <li><a href="{{ $a['manage-team']['url']}}">{{ $a['manage-team']['text'] }}</a></li>
+				    <li><a href="{{ $a['manage-jobs']['url']}}">{{ $a['manage-jobs']['text'] }}</a></li>
+				    <li><a href="{{ $a['inscription']['url']}}">{{ $a['inscription']['text'] }}</a></li>
+				    <li><a href="{{ $a['edit-profil']['url']}}">{{ $a['edit-profil']['text'] }}</a></li>
+				    <li><a href="{{ $a['edit-texts']['url']}}">{{ $a['edit-texts']['text'] }}</a></li>
+				    <li><a href="{{ $a['login']['url']}}">{{ $a['login']['text'] }}</a></li>
+				    <li><a href="{{ $a['logout']['url']}}">{{ $a['logout']['text'] }}</a></li>
+			</nav>
+
 	<div id="private_picture"></div>
 	<div id="tabs">
 		<ul>
