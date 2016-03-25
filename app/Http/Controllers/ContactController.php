@@ -15,6 +15,20 @@ class ContactController extends Controller
 	$this->data['input']['appointment'] = $this->getText('appointment'); 
 	$this->data['input']['other'] = $this->getText('other'); 
 
+	//Labels
+	$this->data['label']['name']='Nom:';
+	$this->data['label']['firstname']='Prenom:';
+	$this->data['label']['companyname']="Nom de l'entreprise";
+	$this->data['label']['mail']='Adresse mail:';
+	$this->data['label']['phone']='Telephone:';
+	$this->data['label']['message']='Message:';
+	$this->data['label']['budget']='Budget alloué:';
+	$this->data['label']['devTime']='Temps de développement:';
+	$this->data['label']['deadline']='Date limite du devis:';
+	$this->data['label']['projectName']='Nom du projet:';
+	$this->data['label']['description']='Description:';
+	$this->data['label']['appointment']='Dates de rendez-vous:';
+
 	//Titles
 	
 	$this->data['h']['contact-us'] = $this->getText('contact-us'); // Nous contacter
