@@ -220,6 +220,8 @@ html, body {margin : 0px;padding:0;background-color: #eaeaea;font-family: sans-s
     height: 120px;
     display: inline-block;
     float: right;
+    margin-top:26px;
+    margin-right:10px;
 }
 
 .profil_projects {
