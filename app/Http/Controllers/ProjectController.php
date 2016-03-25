@@ -54,7 +54,7 @@ class ProjectController extends Controller
                 $techno = \DB::table('technology')->where('id', $projecTechno[$i]->technoId)->first();
                 $this->data['techno'][$i]['src'] = $this->BASE_URL.'ressources/techno_icon/'.$techno->pathImg;
             }
-            print_r($this->data['techno']);
+            //print_r($this->data['techno']);
             
 
             $this->data['h'][1][1] = 'defaultH';
