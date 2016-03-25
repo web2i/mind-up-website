@@ -463,6 +463,7 @@ th {
 }
 #jobsTable{width:80%;}
 .jobsTableTd{width:auto;text-align:center;border-right:2px #B0AAAA dashed;}
+.jobsTableTdButton{width:auto;text-align:center;}
 .jobsTableTd2{border-right:2px #B0AAAA dashed;}
 .jobsTableTr{width:auto;}
 .add_user {
