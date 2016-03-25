@@ -10,11 +10,12 @@ CREATE TABLE IF NOT EXISTS `project_techno` (
 
 
 INSERT INTO `project_techno` (`id`, `projectId`, `technoId`) VALUES
-(1, 1, 1),
 (2, 1, 2),
 (3, 1, 3),
-(4, 1, 4);
-
+(4, 1, 4),
+(5, 1, 5),
+(6, 1, 6),
+(7, 1, 7);
 
 ALTER TABLE `project_techno`
  ADD PRIMARY KEY (`id`);

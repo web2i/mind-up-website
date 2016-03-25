@@ -21,7 +21,6 @@
 	</div>
 
 
-	<h3 class="members_title">{{ $h[2][3] }}</h3>
 	<section id="members">
 	<ul class="members_list">
 	<?php

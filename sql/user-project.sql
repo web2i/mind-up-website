@@ -16,13 +16,12 @@ ALTER TABLE `userProjects`
 
 INSERT INTO `userProjects` (`projectId`, `memberId`) VALUES
 (0, 0),
-(1, 1),
+(1, 14),
 (2, 1),
-(1, 1),
 (3, 2),
-(1, 2),
+(1, 15),
 (3, 1),
-(1, 3),
+(1, 16),
 (2, 3)
 ;
 
