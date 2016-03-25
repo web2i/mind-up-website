@@ -48,6 +48,23 @@
         echo '</tr>';
 	
     }
+	echo '<tr class="jobsTableTr">';
+    foreach ($jobs as $job){
+		foreach($job as $aa){
+		echo '<td class="jobsTableTd">';
+		if($countTd >= 3)
+	    	{
+			echo '<input id="box'.$aa.'" type="checkbox">';
+		}
+		else
+		{
+			echo '<input type="text" value=""/>';
+		}
+		
+		echo '</td>';}
+	
+   }
+	echo '</tr>';
 ?>
 </table>
 </div>		
