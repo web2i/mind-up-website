@@ -120,8 +120,16 @@ INSERT INTO `texts` (`edit`, `textId`, `french`) VALUES
 (1, 'infos', 'Informations'),
 (1, 'appointment', 'Rendez-vous'),
 (1, 'other', 'Autre'),
-(1, 'contact-us', 'Nous contacter')
+(1, 'contact-us', 'Nous contacter'),
 
+(0, 'contact-ask-infos', 'Demande d\'informations'),
+(0, 'contact-ask-quotation', 'Demande de devis'),
+(0, 'contact-ask-appointment', 'Demande de rendez-vous'),
+(0, 'contact-ask-other', 'Autre demande'),
+(0, 'contact-button', 'Envoyer ma demande'),
+
+(0, 'default', 'default'),
+(0, '', 'nope')
 ;
 
 
