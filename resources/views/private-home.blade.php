@@ -3,7 +3,7 @@
 @section('content')
 
 <!--To Remove  -->
-				   
+<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.11.4/jquery-ui.css" media="all">				   
 				    <!-- -->
 
 <section id="private_navig">
