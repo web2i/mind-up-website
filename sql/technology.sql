@@ -11,9 +11,11 @@ CREATE TABLE IF NOT EXISTS `technology` (
 INSERT INTO `technology` (`id`, `pathImg`) VALUES
 (1, 'apple.png'),
 (2, 'eclipse.png'),
-(3, 'python.png'),
-(4, 'trello.png');
-
+(3, 'javascript.png'),
+(4, 'java.png'),
+(5, 'google-cloud-platform.png'),
+(6, 'google_drive.png'),
+(7, 'jquery_logo.png');
 
 ALTER TABLE `technology`
  ADD PRIMARY KEY (`id`);

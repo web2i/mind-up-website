@@ -69,7 +69,10 @@ INSERT INTO `members` (`key`, `firstname`, `name`, `jobId`, `email`, `hash`, `mo
 (0, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
 (0, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
 (0, 'Johny', 'Johnson', 'project-manager', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
-(0, 'Johny', 'Johnson', 'project-manager', '', '', '0678424835', 0, 'City', '','','','','', '', 0)
+(0, 'Johny', 'Johnson', 'project-manager', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
+(0, 'Bourgois', 'Loic', 'project-manager', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
+(0, 'Desmarchelier', 'Maxime', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
+(0, 'Pendon', 'Nicolas', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0)
 ;
 
 --
