@@ -460,6 +460,8 @@ th {
 
 .jobsTableTh{
 	background-color:#B0AAAA;
+	white-space: nowrap;
+	padding: 4px 8px;
 }
 #jobsTable{width:80%;}
 .jobsTableTd{width:auto;text-align:center;border-right:2px #B0AAAA dashed;}
