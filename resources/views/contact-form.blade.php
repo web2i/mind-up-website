@@ -76,19 +76,19 @@
 			</tr>
 			<tr>
 				<td  class="contact_form_td"><label class="contact_form_label2">{{ $label['budget'] }}</label></td>
-				<td  class="contact_form_td2"><input class="contact_form_input" name="BudgetDevis" /></td>
+				<td  class="contact_form_td2"><input class="contact_form_input" name="BudgetDevis" value=""/></td>
 			</tr>
 			<tr>
 				<td  class="contact_form_td"><label class="contact_form_label2">{{ $label['devTime'] }}</label></td>
-				<td  class="contact_form_td2"><input class="contact_form_input" name="DureeDeveloppementDevis" /></td>
+				<td  class="contact_form_td2"><input class="contact_form_input" name="DureeDeveloppementDevis" value=""/></td>
 			</tr>
 			<tr>
 				<td  class="contact_form_td"><label class="contact_form_label2">{{ $label['quotation-deadline'] }}</label></td>
-				<td  class="contact_form_td2"><input class="contact_form_input" name="DateLimiteDevis" /></td>
+				<td  class="contact_form_td2"><input type="text" class="contact_form_input" name="DateLimiteDevis" value=""/></td>
 			</tr>
 			<tr>
 				<td  class="contact_form_td"><label class="contact_form_label2">{{ $label['projectName'] }}</label></td>
-				<td  class="contact_form_td2"><input class="contact_form_input" name="ProjectNameDevis" /></td>
+				<td  class="contact_form_td2"><input class="contact_form_input" name="ProjectNameDevis" value=""/></td>
 			</tr>
 			<tr>
 				<td  class="contact_form_td"><label class="contact_form_label2">{{ $label['description'] }}</label></td>

@@ -1,3 +1,7 @@
+$( document ).ready(function() {
+    $("#DateLimiteDevis").datepicker();
+});
+
 function formInfos()
 {
 	var formInfos=document.getElementById("formInfos");
