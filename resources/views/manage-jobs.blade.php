@@ -49,21 +49,30 @@
 	
     }
 	echo '<tr class="jobsTableTr">';
-    foreach ($jobs as $job){
-		foreach($job as $aa){
+    
+		$job = $jobs[1];
+		$countTd = 0;
+		$i=0;
+		$max  = sizeof($job);
+		for($i=0;$i<$max;$i++)
+		{
 		echo '<td class="jobsTableTd">';
 		if($countTd >= 3)
 	    	{
-			echo '<input id="box'.$aa.'" type="checkbox">';
+			echo '<input id="box'.'" type="checkbox">';
 		}
 		else
 		{
 			echo '<input type="text" value=""/>';
+			$countTd = $countTd +1;
 		}
 		
+		
 		echo '</td>';}
-	
-   }
+		echo '<td class="jobsTableTdButton">';
+		echo '<input type="button" value="Ajouter"/>';
+		echo '</td>';
+   
 	echo '</tr>';
 ?>
 </table>
