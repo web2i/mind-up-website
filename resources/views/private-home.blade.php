@@ -22,9 +22,9 @@
 	<div id="private_picture"></div>
 	<div id="tabs">
 		<ul>
-			<li><a href="#tabs-1">First</a></li>
-			<li><a href="#tabs-2">Second</a></li>
-			<li><a href="#tabs-3">Third</a></li>
+			<li><a href="#tabs-1">Membres</a></li>
+			<li><a href="#tabs-2">Projets</a></li>
+			<li><a href="#tabs-3">Textes</a></li>
 		</ul>
 		<div id="tabs-1">
 			<h3>Mes droits</h3>

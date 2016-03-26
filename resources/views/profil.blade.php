@@ -10,7 +10,6 @@
 		<li><h3>{{ $user['job'] }}</h3></li>
 		<li><h3>{{ $user['email'] }}</h3></li>
 		<li><h3>{{ $user['mobile'] }}</h3></li>
-		<span class="ui-icon ui-icon-key"></span>
 	</ul>
 	
 	<p>{{ $user['description'] }}</p>

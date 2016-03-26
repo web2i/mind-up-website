@@ -91,13 +91,13 @@ INSERT INTO `texts` (`edit`, `textId`, `french`) VALUES
 (1, 'rights-managePositions', 'Manage jobs'),
 (1, 'rights-manageMembers', 'Manage members'),
 
-(1, 'rights-department', 'Departement'),
-(1, 'rights-textId', 'Text id'),
+(1, 'rights-department', 'Pôle'),
+(1, 'rights-textId', 'Poste'),
 
 (1, 'admin', 'Administrateur'),
-(1, 'guest', 'guest'),
+(1, 'guest', 'Invité'),
 (1, 'project-manager', 'Chargé d\'affaires'),
-(1, 'member', 'member'),
+(1, 'member', 'Membre'),
 (1, 'president', 'Président'),
 (1, 'tresorer', 'Trésorier'),
 (1, 'deputy-tresorer', 'Vice-trésorier'),
@@ -146,11 +146,12 @@ INSERT INTO `texts` (`edit`, `textId`, `french`) VALUES
 (0, 'projectName', 'Nom du projet : '),
 (0, 'description', 'Description : '),
 (0, 'appointment-date', 'Dates de rendez-vous : '),
+(0, 'order', 'Ordre'),
 
 
 
 (0, 'default', 'default'),
-(0, '', 'nope')
+(0, '', '  ')
 ;
 
 

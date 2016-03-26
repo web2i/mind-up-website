@@ -17,7 +17,7 @@
 <table id="jobsTable">
 <?php
     
-    echo '<tr class="jobsTableTh"><th>Order</th>';
+    echo '<tr class="jobsTableTh"><th>'.$texts['order'].'</th>';
     foreach($rights as $right) {
         echo '<th class="jobsTableTh">' . $right . '</th>';
     }
