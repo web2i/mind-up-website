@@ -11,7 +11,7 @@
 	    <!-- TODO -->
 	    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.11.4/jquery-ui.css" media="all">
+	<link rel="stylesheet" type="text/css" href="{{ $css[2] }}" media="all">
         <!-- TODO -->
     </head>
 

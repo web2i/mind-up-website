@@ -36,7 +36,8 @@ class Controller extends BaseController
                 ),
             'css' => array(
                 0 => $this->BASE_URL.'/css/project-stylesheet.css',
-                1 => $this->BASE_URL.'/css/stylesheet.css'),
+                1 => $this->BASE_URL.'/css/stylesheet.css',
+                2 => $this->BASE_URL.'/js/jquery-ui-1.11.4/jquery-ui.css'),
             'website' => $this->getText('website'),
             'copyright' => $this->getText('copyright'),
             /*'p' => array(
