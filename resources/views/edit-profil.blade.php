@@ -8,14 +8,19 @@
 <section class="profil_content">
 	<img class="profil_image" src="{{ $user['picture']['src'] }}" alt="" />
 	<ul>
-		<li><h2>{{ $user['firstname'] }} {{ $user['name'] }}</h2></li>
-		<li><h3>{{ $user['job'] }}</h3></li>
-		<li><h3>{{ $user['email'] }}</h3></li>
-		<li><h3>{{ $user['mobile'] }}</h3></li>
+		<li>
+		    <label>Prénom : </label><input value="{{ $user['firstname'] }}"></input>
+		    <label>Nom : </label><input value="{{ $user['name'] }}"></input>
+		</li>
+		<li><label>Poste : </label><input value="{{ $user['job'] }}"></input></li>
+		<li><label>Email : </label><input value="{{ $user['email'] }}"></input></li>
+		<li><label>Téléphone : </label><input value="{{ $user['mobile'] }}"></input></li>
 		<span class="ui-icon ui-icon-key"></span>
 	</ul>
 	
-	<p>{{ $user['description'] }}</p>
+	<h1>Description</h1>
+	<textarea class="edit-profil-description">{{ $user['description'] }}</textarea>
+	<button>Go</button>
 	
 	</br>
 

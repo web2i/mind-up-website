@@ -73,17 +73,17 @@ class User
             return '-';
         return $this->email;
     }
-    /*public function getEmail() {
+    public function getEmail() {
         return $this->email;
-    }*/
+    }
     public function getTextMobile() {
         if(!$this->mobile)
             return '-';
         return $this->mobile;
     }
-    /*public function getMobile() {
+    public function getMobile() {
         return $this->mobile;
-    }*/
+    }
     public function getJobTextId() {
         return $this->job->getTextId();
     }
