@@ -32,7 +32,11 @@ class ProjectController extends Controller
                 $this->data['members'][$i]['name'] = $member->name;
                 $this->data['members'][$i]['firstname'] = $member->firstname;
                 $this->data['members'][$i]['jobId'] = $member->jobId;
-                $this->data['members'][$i]['imageName']['src'] = $this->BASE_URL.'ressources/images/'.$member->imageName;
+                $this->data['members'][$i]['url'] = $this->BASE_URL. 'index.php/profil/' .$member->id;
+                $imageName = $member->imageName;
+                if(!$imageName)
+                    $imageName = "default-profil.png";
+                $this->data['members'][$i]['imageName']['src'] = $this->BASE_URL.'ressources/profiles/'.$imageName;
             }
             //On récupère les infos du client lié au projet
             $client = \DB::table('client')->where('id', $project->clientId)->first();

@@ -58,21 +58,21 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 INSERT INTO `members` (`key`, `firstname`, `name`, `jobId`, `email`, `hash`, `mobile`, `addressId`, `cityOfBirth`, `pathToStudentCard`, `pathToIdCard`, `pathToCV`, `pathToLicense`, `pathToGrayCard`, `imageName`, `important`) VALUES
 (0, 'Admin', 'Admin', 'admin', 'admin', '$2y$10$RXa9PP9duKR/HQj8AXao6.Tp3bgcU7r/ehunqMVpBXkI/uPg7H.qi', '0123456789', 0, 'City', '','','','','','',0), -- pass = admin
-(0, 'John', 'Do', 'project-manager', 'themail@gmail.com', '', '0621307498', 0, 'City', '','','','','', '',0),
+(0, 'John', 'Do', 'project-manager', '', '', '', 0, 'City', '','','','','', '',0),
 (0, 'John', 'Do', 'project-manager', 'themail@gmail.com', '', '0621307498', 0, 'City', '','','','','', '',0),
 (1, 'El', 'Presidente', 'president', 'prez@gmail.com', '', '0678424835', 0, 'City', '','','','','', 'president.gif', 1),
 (0, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 1),
 (0, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 1),
-(0, 'Johny', 'Johnson', 'deputy-tresorer', '', '', '0678424835', 0, 'City', '','','','','', '', 1),
+(0, 'Johny', 'Johnson', 'deputy-tresorer', '', '', '', 0, 'City', '','','','','', '', 1),
 (0, 'Johny', 'Johnson', 'tresorer', '', '', '0678424835', 0, 'City', '','','','','', '', 1),
-(0, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
-(0, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
+(0, 'Johny', 'Johnson', 'developer', '', '', '', 0, 'City', '','','','','', '', 0),
+(0, 'Johny', 'Johnson', 'developer', '', '', '', 0, 'City', '','','','','', '', 0),
 (0, 'Johny', 'Johnson', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
 (0, 'Johny', 'Johnson', 'project-manager', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
 (0, 'Johny', 'Johnson', 'project-manager', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
-(1, 'Loïc', 'Bourgois', 'project-manager', '', '', '0678424835', 0, 'City', '','','','','', '', 1),
-(0, 'Maxime', 'Desmarchelier', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0),
-(0, 'Nicolas', 'Pendon', 'developer', '', '', '0678424835', 0, 'City', '','','','','', '', 0)
+(1, 'Loïc', 'Bourgois', 'project-manager', '', '', '', 0, 'City', '','','','','', '', 1),
+(0, 'Maxime', 'Desmarchelier', 'developer', '', '', '', 0, 'City', '','','','','', '', 0),
+(0, 'Nicolas', 'Pendon', 'developer', '', '', '', 0, 'City', '','','','','', '', 0)
 ;
 
 --

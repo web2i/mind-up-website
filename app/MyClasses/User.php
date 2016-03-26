@@ -68,12 +68,22 @@ class User
     public function getFirstname() {
         return $this->firstname;
     }
-    public function getEmail() {
+    public function getTextEmail() {
+        if(!$this->email)
+            return '-';
         return $this->email;
     }
-    public function getMobile() {
+    /*public function getEmail() {
+        return $this->email;
+    }*/
+    public function getTextMobile() {
+        if(!$this->mobile)
+            return '-';
         return $this->mobile;
     }
+    /*public function getMobile() {
+        return $this->mobile;
+    }*/
     public function getJobTextId() {
         return $this->job->getTextId();
     }

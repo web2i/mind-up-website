@@ -16,8 +16,8 @@ class ProfilController extends Controller
         $this->data['user']['firstname'] = $user->getFirstname();
         $this->data['user']['name'] = $user->getName();
         $this->data['user']['job'] = $this->getText($user->getJobTextId());
-        $this->data['user']['email'] = $user->getEmail();
-        $this->data['user']['mobile'] = $user->getMobile();
+        $this->data['user']['email'] = $user->getTextEmail();
+        $this->data['user']['mobile'] = $user->getTextMobile();
         $this->data['user']['picture']['src'] = $this->getUrl("ressources/images/".$user->getPathToImage());
         $this->data['user']['description'] = $this->getText("user-".$user->getId()."-description");
         // Projects

@@ -27,7 +27,7 @@
 	foreach($members as $member)
 	{
 		echo '<li class="member">';
-		echo '<a href="profil.php">';
+		echo '<a href="'.$member['url'].'">';
 		echo '<img src="'.$member['imageName']['src'].'" alt="" />';
 		echo '<div>
 					<h3>'.$member['firstname'].' '.$member['name'].'</h3>
