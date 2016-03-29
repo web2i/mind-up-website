@@ -764,3 +764,12 @@ padding-right: 10%;
 }
 
 
+.edit-texts-text {
+    width: 90%;
+    height: 50px;
+}
+
+.edit-texts-id {
+    width: 10%;
+}
+

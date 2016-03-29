@@ -117,7 +117,8 @@ class Controller extends BaseController
         if(Session::get('user'))
         {
             $this->data['user']['logged'] = 1;
-            $this->data['user']['text'] = $this->user->getFirstname();
+            //$this->data['user']['text'] = $this->user->getFirstname();
+            $this->data['user']['text'] = $this->getText('my-profil');
             $this->data['user']['url'] = $this->getUrl("index.php/edit-profil/".$this->user->getId());
         }
     }

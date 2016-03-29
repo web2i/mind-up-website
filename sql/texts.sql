@@ -147,6 +147,7 @@ INSERT INTO `texts` (`edit`, `textId`, `french`) VALUES
 (0, 'description', 'Description : '),
 (0, 'appointment-date', 'Dates de rendez-vous : '),
 (0, 'order', 'Ordre'),
+(1, 'my-profil', 'Mon profil'),
 
 
 
