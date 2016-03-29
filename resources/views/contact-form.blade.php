@@ -13,7 +13,7 @@
 	<div id="contact_form_area">
 		<table id="formInfos">
 		<caption class="formsCaption">{{ $h['1'] }}</caption>
-		<form action="" method="POST">
+		<form action="" method="POST" onSubmit="return validateInfos(this)">
 			<input type="hidden" name="object" value="informaton">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">{{ $label['name'] }} </label></td>
@@ -52,7 +52,7 @@
 		
 		<table id="formDevis">
 		<caption class="formsCaption">{{ $h['2'] }}</caption>
-		<form action="" method="POST">
+		<form action="" method="POST" onSubmit="return validateDevis(this)">
 			<input type="hidden" name="object" value="budget">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">{{ $label['name'] }}</label></td>
@@ -106,7 +106,7 @@
 
 		<table id="formRdv">
 		<caption class="formsCaption">{{ $h['3'] }}</caption>
-		<form action="" method="POST">
+		<form action="" method="POST" onSubmit="return validateRdv(this)">
 			<input type="hidden" name="object" value="appointment">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">{{ $label['name'] }}</label></td>
@@ -148,7 +148,7 @@
 
 		<table id="formAutre">
 		<caption class="formsCaption">{{ $h['4'] }}</caption>
-		<form action="" method="POST">
+		<form action="" method="POST" onSubmit="return validateAutre(this)">
 			<input type="hidden" name="object" value="other">
 			<tr>
 				<td class="contact_form_td"><label class="contact_form_label2">{{ $label['name'] }}</label></td>
