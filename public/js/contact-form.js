@@ -49,3 +49,24 @@ function formAutre()
 	var formAutre=document.getElementById("formAutre");
 	formAutre.style.display = "block";
 }
+
+function validateDevis(form)
+{
+	alert("Validation Devis");
+	form.submit();
+}
+function validateInfos(form)
+{
+	alert("Validation Infos");
+	form.submit();
+}
+function validateAutre(form)
+{
+	alert("Validation Autre");
+	form.submit();
+}
+function validateRdv(form)
+{
+	alert("Validation Rdv");
+	form.submit();
+}
