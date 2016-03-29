@@ -57,7 +57,16 @@ function validateDevis(form)
 }
 function validateInfos(form)
 {
-	alert("Validation Infos");
+	var name=document.getElementByName("nameInfos");
+	var firstname=document.getElementByName("firstnameInfos");
+	var companyName=document.getElementByName("companyInfos");
+	var mail=document.getElementByName("emailInfos");
+	var phone=document.getElementByName("phoneInfos");
+	var message=document.getElementByName("textContactInfos");
+	if(name.value()==null)
+	{
+		alert("name vide");
+	}
 	form.submit();
 }
 function validateAutre(form)
