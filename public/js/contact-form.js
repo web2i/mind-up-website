@@ -57,15 +57,41 @@ function validateDevis(form)
 }
 function validateInfos(form)
 {
-	var name=document.getElementByName("nameInfos");
-	var firstname=document.getElementByName("firstnameInfos");
-	var companyName=document.getElementByName("companyInfos");
-	var mail=document.getElementByName("emailInfos");
-	var phone=document.getElementByName("phoneInfos");
-	var message=document.getElementByName("textContactInfos");
-	if(name.value()==null)
+	var name=document.getElementsByName("nameInfos");
+	var firstname=document.getElementsByName("firstnameInfos");
+	var companyName=document.getElementsByName("companyInfos");
+	var mail=document.getElementsByName("emailInfos");
+	var phone=document.getElementsByName("phoneInfos");
+	var message=document.getElementsByName("textContactInfos");
+	if(name.innerHTML==undefined || name.innerHTML=="")
 	{
 		alert("name vide");
+		return false;
+	}
+	if(firstname.value==undefined || firstname.value=="")
+	{
+		alert("firstname vide");
+		return false;
+	}
+	if(companyName.value==undefined || companyName.value=="")
+	{
+		alert("companyName vide");
+		return false;
+	}
+	if(phone.value==undefined || phone.value=="")
+	{
+		alert("phone vide");
+		return false;
+	}
+	if(mail.value==undefined || mail.value=="")
+	{
+		alert("mail vide");
+		return false;
+	}
+	if(message.value==undefined || message.value=="")
+	{
+		alert("message vide");
+		return false;
 	}
 	form.submit();
 }
